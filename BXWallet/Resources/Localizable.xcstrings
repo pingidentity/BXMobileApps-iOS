@@ -127,6 +127,7 @@
 
     },
     "settings" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -222,6 +223,7 @@
       }
     },
     "verify" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -242,6 +244,17 @@
         }
       }
     },
+    "verify.launch_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not launch verify session."
+          }
+        }
+      }
+    },
     "wallet.attributes" : {
       "localizations" : {
         "en" : {
@@ -253,6 +266,7 @@
       }
     },
     "wallet.camera.loading" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -263,6 +277,7 @@
       }
     },
     "wallet.camera.message" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

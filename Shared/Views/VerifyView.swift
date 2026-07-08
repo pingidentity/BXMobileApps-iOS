@@ -6,27 +6,42 @@
 //
 
 import SwiftUI
+import PingOneVerify
 
 struct VerifyView: View {
     
     @State var verifiedScale = 0.0
+    @State var showQrScanner = false
+    @StateObject var qrScannerViewModel: QRScannerViewModel
     
-    func submissionComplete(verifyResult: String) {
-        GoogleAnalytics.userCompletedAction(actionName: "id_verification")
-        ToastPresenter.show(style: .success, toast: verifyResult)
-        verifiedScale = 1.0
+    @State private var verificationInProgress = false
+    
+    init() {
+        _qrScannerViewModel = StateObject(
+            wrappedValue: QRScannerViewModel(
+                loadingMessageKey: "loading",
+                instructionMessageKey: "verify.scan_qr"
+            )
+        )
     }
     
-    func submissionError(error: String) {
-        GoogleAnalytics.userCompletedAction(actionName: "id_verification", actionSuccesful: false)
-        if error.contains("Invalid URL") {
-            ToastPresenter.show(style: .error, toast: String(localized: "verify.invalid_url"))
-        } else {
-            ToastPresenter.show(style: .error, toast: error)
+    func qrScanComplete(url: String) {
+        guard let rootViewController = UIUtilities.getRootViewController() else {
+            print("rootViewController was null, cannot launch verify")
+            return
         }
         
+        PingOneVerifyHelper.initialize(with: url, rootViewController: rootViewController) { helper, error  in
+            if let error {
+                print(error.localizedDescription!)
+                ToastPresenter.show(style: .error, toast: String(localized: "verify.launch_error"))
+                return
+            }
+            
+            helper?.start()
+        }
     }
-    
+
     var body: some View {
         VStack {
             Text(LocalizedStringKey("verify.message"))
@@ -49,13 +64,27 @@ struct VerifyView: View {
 
             Button(LocalizedStringKey("verify.identity")) {
                 GoogleAnalytics.userTappedButton(buttonName: "verify_identity")
-                let verifyClient = VerifyClient(submissionCompleteCallback: submissionComplete, submissionErrorCallback: submissionError)
+                showQrScanner = true
                 
-                verifyClient.launchVerify()
             }
             .buttonStyle(BXFullWidthButtonStyle())
         }
         .padding()
+        .popover(isPresented: $showQrScanner) {
+            QRScannerView()
+                .environmentObject(qrScannerViewModel)
+        }
+        .onChange(of: qrScannerViewModel.scanResult) { _, newValue in
+            guard let url = newValue else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                showQrScanner = false
+                qrScannerViewModel.scanResult = nil
+                qrScanComplete(url: url)
+            }
+        }
     }
 }
 

@@ -9,8 +9,6 @@ import SwiftUI
 
 struct BottomBarView: View {
     
-    @Binding var presentSideMenu: Bool
-    
     @Environment(\.colorScheme) private var colorScheme
     
     @EnvironmentObject var walletModel: WalletViewModel
@@ -38,21 +36,6 @@ struct BottomBarView: View {
             Divider()
             HStack {
                 Spacer()
-                Button(action: {
-                    presentSideMenu.toggle()
-                }, label: {
-                    VStack {
-                        Image(systemName: "gearshape")
-                            .font(.system(size: 20))
-
-                        Text("settings")
-                            .font(.system(.caption))
-
-                            
-                    }
-                })
-                .tint(.bxPrimary)
-                Spacer()
                 Button(action: launchQRScanner) {
                     Image(systemName: "qrcode.viewfinder")
                         .font(.system(size: 40))
@@ -64,28 +47,13 @@ struct BottomBarView: View {
                     .padding(.top)
                     .padding(.bottom, 32)
                 Spacer()
-                Button(action: {
-                    let verifyClient = VerifyClient(submissionCompleteCallback: submissionComplete, submissionErrorCallback: submissionError)
-                    
-                    verifyClient.launchVerify(primaryColor: .bxPrimary)
-                }) {
-                    VStack {
-                        Image(systemName: "person.badge.shield.checkmark.fill")
-                            .font(.system(size: 20))
-
-                        Text("verify")
-                            .font(.system(.caption))
-
-                    }
-                }
-                .tint(.bxPrimary)
-                Spacer()
             }
             .background(colorScheme == .light ? .white : .black)
         }
         .ignoresSafeArea()
         .popover(isPresented: $walletModel.presentQrScanner) {
             QRScannerView()
+                .environmentObject(walletModel.qrScannerModel)
         }
     }
 }

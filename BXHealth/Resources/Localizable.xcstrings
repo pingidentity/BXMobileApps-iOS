@@ -327,6 +327,17 @@
         }
       }
     },
+    "verify.launch_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not launch verify session."
+          }
+        }
+      }
+    },
     "verify.message" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -334,6 +345,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "To verify your identity for your caregiver account please have your ID or Passport ready and scan the QR code displayed on your application through the BXHealth website."
+          }
+        }
+      }
+    },
+    "verify.scan_qr" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please scan your PingOne Verify QR Code"
           }
         }
       }

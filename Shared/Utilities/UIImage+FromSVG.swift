@@ -17,7 +17,7 @@ extension UIImage {
         if let cardImageStr = CredentialUtils.getCardImageFromClaim(claim) ?? claim.getData()[ClaimKeys.cardImage] {
            return fromSvg(cardImageStr, size: size)
         }
-        logerror("Failed to parse svg image")
+        PingOneWallet.logerror("Failed to parse svg image")
         return nil
     }
     

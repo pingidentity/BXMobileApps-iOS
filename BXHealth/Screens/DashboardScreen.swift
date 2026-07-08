@@ -55,11 +55,6 @@ struct DashboardScreen: View {
                 Text(LocalizedStringKey("messages"))
                 Image(systemName: "message")
             }.tag(Tab.messages)
-            
-            Text(LocalizedStringKey("find_doctor")).tabItem {
-                Text(LocalizedStringKey("find_doctor"))
-                Image(systemName: "stethoscope")
-            }.tag(Tab.doctor)
         
         }
         .tint(Color(K.Colors.Primary))

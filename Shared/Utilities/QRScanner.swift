@@ -9,21 +9,21 @@ import SwiftUI
 import AVFoundation
 
 struct QRScannerView: View {
-    @EnvironmentObject var walletModel: WalletViewModel
+    @EnvironmentObject var qrScannerModel: QRScannerViewModel
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            QRScanner(result: $walletModel.scanResult, loadingCamera: $walletModel.loadingCamera)
-                .onChange(of: walletModel.scanResult) { oldValue, newValue in
-                    if newValue != nil {
-                        walletModel.processQrCode(false)
+            QRScanner(result: $qrScannerModel.scanResult, loadingCamera: $qrScannerModel.loadingCamera)
+                .onChange(of: qrScannerModel.scanResult) { oldValue, newValue in
+                    if let result = newValue {
+                        qrScannerModel.handleScanResult(result)
                     }
                 }
             
-            if (walletModel.loadingCamera) {
+            if (qrScannerModel.loadingCamera) {
                 VStack {
                     Spacer()
-                    Text(LocalizedStringKey("wallet.camera.loading"))
+                    Text(LocalizedStringKey(qrScannerModel.loadingMessageKey))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 16)
                         .font(.system(size: 20))
@@ -32,7 +32,7 @@ struct QRScannerView: View {
                     Spacer()
                 }
             } else {
-                Text(LocalizedStringKey("wallet.camera.message"))
+                Text(LocalizedStringKey(qrScannerModel.instructionMessageKey))
                     .padding()
                     .background(Color.bxPrimary)
                     .foregroundColor(.white)

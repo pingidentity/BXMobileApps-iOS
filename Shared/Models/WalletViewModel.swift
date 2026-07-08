@@ -13,9 +13,9 @@ class WalletViewModel: ObservableObject {
     static let shared = WalletViewModel()
     
     @Published var presentQrScanner = false
-    @Published var scanResult: String? = nil
-    @Published var loadingCamera = false
-    
+
+    let qrScannerModel: QRScannerViewModel
+
     @Published var walletInitialized = false
     @Published var pairing = false
     @Published var credentials: [Credential] = []
@@ -27,7 +27,18 @@ class WalletViewModel: ObservableObject {
     
     var coordinator: WalletCoordinator? = nil
     private var eventObserver: EventObserver!
-    
+
+    init() {
+        qrScannerModel = QRScannerViewModel()
+        setupQRScannerCallback()
+    }
+
+    private func setupQRScannerCallback() {
+        qrScannerModel.onScanResult = { [weak self] _ in
+            self?.processQrCode(false)
+        }
+    }
+
     func walletSuccessfullyInitialized(coordinator: WalletCoordinator) {
         DispatchQueue.main.async {
             self.walletInitialized = true
@@ -42,15 +53,36 @@ class WalletViewModel: ObservableObject {
     }
     
     func processQrCode(_ isPairing: Bool) {
-        guard let scanResult else {
+        presentQrScanner = false
+        
+        guard let scanResult = qrScannerModel.scanResult else {
             print("scanResult is nil, nothing to process")
-            return;
+            return
         }
         
-        presentQrScanner = false
-        pairing = isPairing
-        coordinator?.processPairingUrl(qrContent: scanResult)
-        self.scanResult = nil
+        if let scanResultUrl = URL(string: scanResult) {
+            if scanResultUrl.lastPathComponent == "verify" {
+                guard let rootViewController = UIUtilities.getRootViewController() else {
+                    print("rootViewController was null, cannot launch verify")
+                    return
+                }
+                
+                PingOneVerifyHelper.initialize(with: scanResult, rootViewController: rootViewController) { helper, error  in
+                    if let error {
+                        print(error.localizedDescription!)
+                        ToastPresenter.show(style: .error, toast: String(localized: "verify.launch_error"))
+                        return
+                    }
+                    
+                    helper?.start()
+                }
+            } else {
+                pairing = isPairing
+                coordinator?.processPairingUrl(qrContent: scanResult)
+            }
+        }
+        
+        qrScannerModel.scanResult = nil
     }
     
     func refreshCredentials() {

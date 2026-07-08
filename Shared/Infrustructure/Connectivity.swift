@@ -12,11 +12,11 @@ import DIDSDK
 public class Connectivity {
     
     class func checkNetworkStatus() -> Bool {
-        if let networkReachability = NetworkReachability() {
-            logattention("Starting network status notifier: \(networkReachability.startNotifier())")
+        if let networkReachability = DIDSDK.NetworkReachability() {
+            PingOneWallet.logattention("Starting network status notifier: \(networkReachability.startNotifier())")
             switch networkReachability.currentNetworkStatus {
             case .available(_):
-                logattention("Network status check successful - Available.")
+                PingOneWallet.logattention("Network status check successful - Available.")
                 return true
             case .unavailable,
                  .unknown:
@@ -25,7 +25,7 @@ public class Connectivity {
                 return false
             }
         } else {
-            logerror("Failed to initialize NetworkReachability.")
+            PingOneWallet.logerror("Failed to initialize NetworkReachability.")
             return false
         }
     }
