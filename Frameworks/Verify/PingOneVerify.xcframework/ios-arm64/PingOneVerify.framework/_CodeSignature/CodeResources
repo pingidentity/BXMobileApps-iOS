@@ -4,133 +4,41 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AadhaarOtpVC.nib</key>
-		<data>
-		nzmmXo3Ng74PLLkiGueozAmlChk=
-		</data>
-		<key>Assets.car</key>
-		<data>
-		ic5PTG0A9vHa6Q7Z9L0/nWlCiRQ=
-		</data>
-		<key>CustomCountryPickerViewController.nib</key>
-		<data>
-		yC8dtCntQVZb+zQmH3yEwZlRmwo=
-		</data>
-		<key>CustomMenu.nib</key>
-		<data>
-		yl8siSSIRCqUAE3dbqvhJasA0us=
-		</data>
-		<key>CustomPhoneView.nib</key>
-		<data>
-		/uACixunIW4PT1kwjaf1JSrpqGA=
-		</data>
-		<key>CustomToastView.nib</key>
-		<data>
-		OLBggedw/u47tgFjgH3itvTXbqA=
-		</data>
-		<key>DataCaptureViewController.nib</key>
-		<data>
-		aKvNXQhp9rjoIR3jtcsKRykYJrs=
-		</data>
-		<key>DocumentCaptureViewController.nib</key>
-		<data>
-		fUWeEQvv4gYTSJi3/ILIJ38s5bM=
-		</data>
-		<key>DocumentSelectionCell.nib</key>
-		<data>
-		OU5Rwd7noSj6fVTFP5efZ/XT/sI=
-		</data>
-		<key>DocumentSelectionVC.nib</key>
-		<data>
-		kje8mALsMTitGe+C1op4FYx6nmo=
-		</data>
 		<key>Headers/PingOneVerify-Swift.h</key>
 		<data>
-		Pk0YRPKb9hGgsPUv50O+HjBPtrM=
+		+42dY8r5CqmSdNEvNFDrdYz00w0=
 		</data>
 		<key>Headers/PingOneVerify.h</key>
 		<data>
 		xOI5+jIoiGAK6iY4LRt1B9+qqk4=
 		</data>
-		<key>IdCaptureViewController.nib</key>
-		<data>
-		bGUwknVjiVQ30RBpMjKwIwi4SOo=
-		</data>
-		<key>ImageCell.nib</key>
-		<data>
-		43vkiVViyjdPiKZyFHlmFCFo8ho=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		JXdbycPGrBSPgGm9dI0XfxzQfjw=
-		</data>
-		<key>LabelCell.nib</key>
-		<data>
-		spyS8O9fMhGbm4HvNmTBV8e+KxQ=
+		kim+I/7JkvRTwKNvxFoF9BPewZI=
 		</data>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		iJM82zmp3po9E0zzm3oXHRgs/vY=
+		uhOLeSk3vfisaMKreX+2QJGx/Io=
 		</data>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		8bA0XbxN5LMxADowqeEewXiqgFE=
+		wYmSk4H2qVjjmIAw9HcOGDArKrk=
 		</data>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		wyZi6dCgMWX57iHh4cMdUiozfNE=
+		J7uUqD359gxYu2sCdDahJc/qsZs=
 		</data>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		8bA0XbxN5LMxADowqeEewXiqgFE=
+		wYmSk4H2qVjjmIAw9HcOGDArKrk=
 		</data>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CrTwPO896+FVgSggLuQdN6q9Ls8=
+		WLCIg2sljfjkSNy3Ub1j2LAnbfU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		3SBcegosNeEcUU/kBDYOrYH+x4I=
-		</data>
-		<key>OtpViewController.nib</key>
-		<data>
-		ORM3ktqt35pLgbf0YYqJiQfwDOs=
-		</data>
-		<key>PingOneNavController.nib</key>
-		<data>
-		2dk35Hb8eHdiF6RY20ubXb6JYKw=
-		</data>
-		<key>PingOneVerifyLocalizable.strings</key>
-		<data>
-		mAFo+3F/JaGXFh4B3g7y+PYCBb4=
-		</data>
-		<key>PreviewViewController.nib</key>
-		<data>
-		V41UGydHsB4Bw2iLzivPOqSprHw=
-		</data>
-		<key>ProcessingViewController.nib</key>
-		<data>
-		vY757tk34LJHs99sXgA2P4np29U=
-		</data>
-		<key>QrScannerView.nib</key>
-		<data>
-		Q7EKOYUIKgspvluag4fFfcHqkRg=
-		</data>
-		<key>RetryViewController.nib</key>
-		<data>
-		eDN7fszvi7jRWbCEKCObl1pFU4I=
-		</data>
-		<key>SelfieCaptureView.nib</key>
-		<data>
-		ijWK2sNYvjGEtTVgbpcN9rmXzfY=
-		</data>
-		<key>SelfiePreviewView.nib</key>
-		<data>
-		Owp5u7T8Y0PqnTWwFnBtfDiDyME=
-		</data>
-		<key>countries.json</key>
-		<data>
-		R5OkvJlvr+e0KEcdGXjUqEiT4uw=
 		</data>
 		<key>license.key</key>
 		<data>
@@ -139,81 +47,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AadhaarOtpVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4dRhe4l7RjcvU+jfwb/LfZlSgwOvk/lGabBS9kUcGS4=
-			</data>
-		</dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+BhSimzbsTuhvZZbX/VYclPUdQ4iK0Yft85L5e6uVVs=
-			</data>
-		</dict>
-		<key>CustomCountryPickerViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UmlrGCAGwnLb2Zsx6qgMqEkDdp9lh5S5fLglmp0Uz6o=
-			</data>
-		</dict>
-		<key>CustomMenu.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YtXs7zKTjh8dezf7bmt49CHhymhspBAeDRwQlCIctwY=
-			</data>
-		</dict>
-		<key>CustomPhoneView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IDsWfD5nCrRBkYvYpVJlYQCLoIF4bw6+yJDWiYrh4iI=
-			</data>
-		</dict>
-		<key>CustomToastView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bwaXwdgD+X71wd0Dax7gW6yqH5f5m2HWoRyYYtiJdW8=
-			</data>
-		</dict>
-		<key>DataCaptureViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1i7iRRq3teXkMr9iC8pUUiPp8xsKIqB9D9rvsgl2EEo=
-			</data>
-		</dict>
-		<key>DocumentCaptureViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			88x3LWSkur3fwnTbPjGGgg4u/yPXDZqylDiSufp3P8M=
-			</data>
-		</dict>
-		<key>DocumentSelectionCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tLU7G/13UD1shXFBdtM/c8mG7aSPbz9IEM+fjCnX4es=
-			</data>
-		</dict>
-		<key>DocumentSelectionVC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2ErP1cQ2kYKwDNoRWr8FQTNOZz6X7EinCA+vCQBrYj4=
-			</data>
-		</dict>
 		<key>Headers/PingOneVerify-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2+IivcIYmfY48grILzoBNTp6XaiEDrAj/MZAyYsjmjE=
+			03/OVwItJhU0emrnPnhz4xR4hBzsh8Wkr6qvVCVhUhw=
 			</data>
 		</dict>
 		<key>Headers/PingOneVerify.h</key>
@@ -223,60 +61,39 @@
 			zYx7K1C36APGN+3Ax2U2l42Qp9Q0C4kzn2FXh9yUNcQ=
 			</data>
 		</dict>
-		<key>IdCaptureViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			n3efbSRbbEkrcZj6cP0WzXanFJga3/i/v6HTEhn9+zw=
-			</data>
-		</dict>
-		<key>ImageCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9ufBxgtE5Vn7ZLSOZWcRRx2qrGlhxiNJqrBcU4Gzsf4=
-			</data>
-		</dict>
-		<key>LabelCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RTL5SMAr6cIESDYQic8QGsrgthfFPZ6AQPT8Qe3Sj8Q=
-			</data>
-		</dict>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Qv/89P+J1hX+2n6LbjMG9TA1/d/mE1hTWnHmBJnc7o=
+			TaJN4nkTQ7BGILrbvewN0JFqfMVExJAQmdj84iSFR20=
 			</data>
 		</dict>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MNIA3Ak1Mm27xa9lj1djs49ZMGyWPOWXMFIYG0XkM20=
+			RqoDd4PgYLSgJWbp5cRb9PvNE+YWxWjJv7uBJseDBCw=
 			</data>
 		</dict>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xl1bnzDlSqB59iShBEVFlRWTF3seAkuBrpaufa8ldVE=
+			2VitQ/gYecRLPq0TdXmW/9ePqlyjPKqhgHIey0qnhVw=
 			</data>
 		</dict>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MNIA3Ak1Mm27xa9lj1djs49ZMGyWPOWXMFIYG0XkM20=
+			RqoDd4PgYLSgJWbp5cRb9PvNE+YWxWjJv7uBJseDBCw=
 			</data>
 		</dict>
 		<key>Modules/PingOneVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rhSTt7OvOTtmhQz6jVGWuQlCLmi9iiEYUmT7ggTyBjw=
+			YXTQxN2QNRXrtseLrQuPeVvwXmLAJH5B03hj3A/zvsA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -284,76 +101,6 @@
 			<key>hash2</key>
 			<data>
 			LuSB9rRWrZb8TO1wf3Mb7WiKowNa9fMkQ5ohuTyEMvw=
-			</data>
-		</dict>
-		<key>OtpViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dRRUHy02Natnf/nW6VaabqQxSXR2kjZ4qN2x9GysgbQ=
-			</data>
-		</dict>
-		<key>PingOneNavController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gq5/PF7XDpUBvm3K7CqtNDa/cT72KLp/eDRH8LsSb90=
-			</data>
-		</dict>
-		<key>PingOneVerifyLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LzWPhwzcvSOC5M1Mr/WCsb94uPy9RzYYuvcnZBGsmwA=
-			</data>
-		</dict>
-		<key>PreviewViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aLoPot60qyuIr8hsyj5Wnm+vQnP6wuWxupbV2CqMmig=
-			</data>
-		</dict>
-		<key>ProcessingViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Y2sD8fy/CoGQSgs8RW7tN8xywkMKt86hnUUABoiKwfI=
-			</data>
-		</dict>
-		<key>QrScannerView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Fcaa0WUEZcsICR0sEaREGUojz8dF4mpFvHJ6UDQU+Lo=
-			</data>
-		</dict>
-		<key>RetryViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M5yWxuZ4OWo+nsi+VE1Bc+oCnFrE/X3p64o6M6Kbzio=
-			</data>
-		</dict>
-		<key>SelfieCaptureView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EEB4wd5or+PJnKTfYFpqYVevq/Qn6VXqv6CYkgA3j+Y=
-			</data>
-		</dict>
-		<key>SelfiePreviewView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DixR+WRvTQtCC7jpH2FFsV4PPK9aBMLBegrTIu+W9gg=
-			</data>
-		</dict>
-		<key>countries.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O3gPj6W/5rd98gYD/rfrODs7ye0v5q/SOrAJe6E2Bd4=
 			</data>
 		</dict>
 		<key>license.key</key>

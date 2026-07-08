@@ -17,9 +17,9 @@ public class EventObserver {
     var remoteNotificationObserver: NSObjectProtocol?
     var userCancelledPairingObserver: NSObjectProtocol?
     
-    public func observeNetworkReachability(onUpdate: @escaping (NetworkReachability.NetworkReachabilityStatus) -> Void) {
-        self.networkReachabilityObserver = NotificationCenter.default.addObserver(forName: NSNotification.Name(NetworkReachability.NETWORK_REACHABILITY_UPDATED), object: nil, queue: nil) { (notification) in
-            guard let networkStatus = notification.userInfo?[NetworkReachability.NETWORK_REACHABILITY_STATUS] as? NetworkReachability.NetworkReachabilityStatus else {
+    public func observeNetworkReachability(onUpdate: @escaping (DIDSDK.NetworkReachability.NetworkReachabilityStatus) -> Void) {
+        self.networkReachabilityObserver = NotificationCenter.default.addObserver(forName: NSNotification.Name(DIDSDK.NetworkReachability.NETWORK_REACHABILITY_UPDATED), object: nil, queue: nil) { (notification) in
+            guard let networkStatus = notification.userInfo?[DIDSDK.NetworkReachability.NETWORK_REACHABILITY_STATUS] as? DIDSDK.NetworkReachability.NetworkReachabilityStatus else {
                 return
             }
             onUpdate(networkStatus)

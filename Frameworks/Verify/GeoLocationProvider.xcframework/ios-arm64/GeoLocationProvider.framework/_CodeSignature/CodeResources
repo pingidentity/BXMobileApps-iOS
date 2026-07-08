@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O0zfYspRnqXub1DwrS6FmY+nDVU=
+		M4YJAXkxwYcjODimbVgZmN7MmsM=
 		</data>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		UOYPNeQ92GXfgLg6UG7AVuj5LlQ=
+		jLiurJZF3BC0Dsnjdn4tFSLeb6U=
 		</data>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		AZWsQqbN3VCv2BoOlc8tcljvhnA=
+		Qd2zGvegZI6ZHyoe/q17JatQfnU=
 		</data>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		+xpOhHH7WZqVYaW+LLii+PDHIO0=
+		j0ou2NnpjxIU+GLOTsTRvbAUy2c=
 		</data>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		AZWsQqbN3VCv2BoOlc8tcljvhnA=
+		Qd2zGvegZI6ZHyoe/q17JatQfnU=
 		</data>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7fI8y5OYTdjFkm5a9bQ/XwF/+4g=
+		B2ve/nQOq8C0ywC8emcZEmMErlE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8wJgvJpEHecg/n9l+lwTsi7EEDkh6nsJgxaXSbXeuk=
+			xSH7RMiHIXHUIdrTODfHN/0T8HM5u5JjZ8QFxr9MoL8=
 			</data>
 		</dict>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IKdK5CisvbuO5VnyxQmf1Crj+Cyn06kGnaiXFZ+8Rwg=
+			+CiGLILs2y+dMfUvtgpGmmTgP7I0sSU1PwHOnx3h4oo=
 			</data>
 		</dict>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5SlJrAEZsbhg1XMIPlsuOO4FBQcpS9tbkrRO5iDeas=
+			9NCNPFMpYRCZf0z1fwXvEIo8N2GPFM/Wq4dwGNiO/aE=
 			</data>
 		</dict>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IKdK5CisvbuO5VnyxQmf1Crj+Cyn06kGnaiXFZ+8Rwg=
+			+CiGLILs2y+dMfUvtgpGmmTgP7I0sSU1PwHOnx3h4oo=
 			</data>
 		</dict>
 		<key>Modules/GeoLocationProvider.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			frKCecy1+AW26czUyOogsd4763Rn2HEjBzawBC3/3wM=
+			QgPZsSP1ByRVLOnv+IBTaUyS2M/TJ1mKQKsPZO53elo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

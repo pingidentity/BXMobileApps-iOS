@@ -20,6 +20,17 @@ struct HomeWalletView: View {
             NavigationStack {
                 CredentialListView(credentials: walletModel.credentials, credentialDescriptionAttribute: walletAppModel.credentialDescriptionKey, credentialIssuedAttribute: walletAppModel.credentialIssueDateKey)
                     .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Button(action: {
+                                presentSideMenu.toggle()
+                            }, label: {
+                                VStack {
+                                    Image(systemName: "gearshape")
+                                        .font(.system(size: 20))
+                                }
+                            })
+                            .tint(.bxPrimary)
+                        }
                         ToolbarItem(placement: .principal) {
                             if walletAppModel.appLogoUrl.isEmpty && walletAppModel.selectedTheme != .Custom {
                                 Image("\(walletAppModel.selectedTheme.rawValue)Logo")
@@ -44,7 +55,7 @@ struct HomeWalletView: View {
             }
             .tint(.bxPrimary)
             .padding(.bottom, 80)
-            BottomBarView(presentSideMenu: $presentSideMenu)
+            BottomBarView()
         }
         .fullScreenCover(isPresented: $walletModel.presentCredentialPicker) {
             NavigationStack {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,378 @@
 		1031476F2D5BDAD00049F8AD /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1031476E2D5BDAC90049F8AD /* DashboardScreen.swift */; };
 		103147712D5BDC730049F8AD /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 103147702D5BDC730049F8AD /* AppAuth */; };
 		103147732D5BDC790049F8AD /* PingOneSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 103147722D5BDC790049F8AD /* PingOneSDK */; };
+		10333E8E2FFDA22F00F297D8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFD2FFDA22F00F297D8 /* CustomImageView.swift */; };
+		10333E8F2FFDA22F00F297D8 /* QrScannerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E402FFDA22F00F297D8 /* QrScannerContract.swift */; };
+		10333E902FFDA22F00F297D8 /* DataCaptureConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E792FFDA22F00F297D8 /* DataCaptureConstants.swift */; };
+		10333E912FFDA22F00F297D8 /* SampleBufferUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E662FFDA22F00F297D8 /* SampleBufferUtils.swift */; };
+		10333E922FFDA22F00F297D8 /* UILabel+textWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1A2FFDA22F00F297D8 /* UILabel+textWidth.swift */; };
+		10333E932FFDA22F00F297D8 /* TimeInterval+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0C2FFDA22F00F297D8 /* TimeInterval+format.swift */; };
+		10333E942FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E372FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift */; };
+		10333E952FFDA22F00F297D8 /* VerifyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E042FFDA22F00F297D8 /* VerifyButton.swift */; };
+		10333E962FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDD2FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift */; };
+		10333E972FFDA22F00F297D8 /* DocumentCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E7D2FFDA22F00F297D8 /* DocumentCaptureViewController.swift */; };
+		10333E982FFDA22F00F297D8 /* UIImage+loadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E162FFDA22F00F297D8 /* UIImage+loadImage.swift */; };
+		10333E992FFDA22F00F297D8 /* CustomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DEE2FFDA22F00F297D8 /* CustomMenu.swift */; };
+		10333E9A2FFDA22F00F297D8 /* RetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E462FFDA22F00F297D8 /* RetryViewController.swift */; };
+		10333E9B2FFDA22F00F297D8 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E002FFDA22F00F297D8 /* OTPTextField.swift */; };
+		10333E9C2FFDA22F00F297D8 /* SelfiePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E622FFDA22F00F297D8 /* SelfiePreviewViewController.swift */; };
+		10333E9D2FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E282FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift */; };
+		10333E9E2FFDA22F00F297D8 /* AtomicWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E552FFDA22F00F297D8 /* AtomicWrapper.swift */; };
+		10333E9F2FFDA22F00F297D8 /* UIAction+handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0E2FFDA22F00F297D8 /* UIAction+handler.swift */; };
+		10333EA02FFDA22F00F297D8 /* LabelCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE92FFDA22F00F297D8 /* LabelCellContent.swift */; };
+		10333EA12FFDA22F00F297D8 /* AttributedStringProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDA2FFDA22F00F297D8 /* AttributedStringProvider.swift */; };
+		10333EA22FFDA22F00F297D8 /* DocumentCaptureContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3A2FFDA22F00F297D8 /* DocumentCaptureContract.swift */; };
+		10333EA32FFDA22F00F297D8 /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5D2FFDA22F00F297D8 /* CameraOverlayView.swift */; };
+		10333EA42FFDA22F00F297D8 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E092FFDA22F00F297D8 /* String+localized.swift */; };
+		10333EA52FFDA22F00F297D8 /* CenterTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5E2FFDA22F00F297D8 /* CenterTextLayer.swift */; };
+		10333EA62FFDA22F00F297D8 /* ImageCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE52FFDA22F00F297D8 /* ImageCellContent.swift */; };
+		10333EA72FFDA22F00F297D8 /* SelfieQAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4F2FFDA22F00F297D8 /* SelfieQAError.swift */; };
+		10333EA82FFDA22F00F297D8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E562FFDA22F00F297D8 /* Expression.swift */; };
+		10333EA92FFDA22F00F297D8 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E572FFDA22F00F297D8 /* Face.swift */; };
+		10333EAA2FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E252FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift */; };
+		10333EAB2FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E352FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift */; };
+		10333EAC2FFDA22F00F297D8 /* SCFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E492FFDA22F00F297D8 /* SCFace.swift */; };
+		10333EAD2FFDA22F00F297D8 /* CustomMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DEB2FFDA22F00F297D8 /* CustomMenuItemCell.swift */; };
+		10333EAE2FFDA22F00F297D8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE32FFDA22F00F297D8 /* ImageCell.swift */; };
+		10333EAF2FFDA22F00F297D8 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFF2FFDA22F00F297D8 /* HeaderLabel.swift */; };
+		10333EB02FFDA22F00F297D8 /* UITextField+setPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E202FFDA22F00F297D8 /* UITextField+setPadding.swift */; };
+		10333EB12FFDA22F00F297D8 /* TintColorHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E032FFDA22F00F297D8 /* TintColorHolderView.swift */; };
+		10333EB22FFDA22F00F297D8 /* BaseViewController+navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E062FFDA22F00F297D8 /* BaseViewController+navigation.swift */; };
+		10333EB32FFDA22F00F297D8 /* CGRect+CenteredRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E522FFDA22F00F297D8 /* CGRect+CenteredRect.swift */; };
+		10333EB42FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E772FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift */; };
+		10333EB52FFDA22F00F297D8 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE72FFDA22F00F297D8 /* LabelCell.swift */; };
+		10333EB62FFDA22F00F297D8 /* UIImage+resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E172FFDA22F00F297D8 /* UIImage+resizeImage.swift */; };
+		10333EB72FFDA22F00F297D8 /* QrScannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E422FFDA22F00F297D8 /* QrScannerPresenter.swift */; };
+		10333EB82FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E102FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift */; };
+		10333EB92FFDA22F00F297D8 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3D2FFDA22F00F297D8 /* PreviewViewController.swift */; };
+		10333EBA2FFDA22F00F297D8 /* QrScannerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E412FFDA22F00F297D8 /* QrScannerListener.swift */; };
+		10333EBB2FFDA22F00F297D8 /* LandmarkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E592FFDA22F00F297D8 /* LandmarkType.swift */; };
+		10333EBC2FFDA22F00F297D8 /* UIImage+addGrandient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E142FFDA22F00F297D8 /* UIImage+addGrandient.swift */; };
+		10333EBD2FFDA22F00F297D8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFE2FFDA22F00F297D8 /* CustomTextField.swift */; };
+		10333EBE2FFDA22F00F297D8 /* DocumentSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E802FFDA22F00F297D8 /* DocumentSelectionCell.swift */; };
+		10333EBF2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E2A2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift */; };
+		10333EC02FFDA22F00F297D8 /* SelfieQAResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5B2FFDA22F00F297D8 /* SelfieQAResult.swift */; };
+		10333EC12FFDA22F00F297D8 /* UIImage+addImagePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E152FFDA22F00F297D8 /* UIImage+addImagePadding.swift */; };
+		10333EC22FFDA22F00F297D8 /* DocumentCapturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3B2FFDA22F00F297D8 /* DocumentCapturePresenter.swift */; };
+		10333EC32FFDA22F00F297D8 /* DocumentSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E832FFDA22F00F297D8 /* DocumentSelectionViewController.swift */; };
+		10333EC42FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E722FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift */; };
+		10333EC52FFDA22F00F297D8 /* PhoneCaptureUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E742FFDA22F00F297D8 /* PhoneCaptureUtils.swift */; };
+		10333EC62FFDA22F00F297D8 /* EmailCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6D2FFDA22F00F297D8 /* EmailCaptureViewController.swift */; };
+		10333EC72FFDA22F00F297D8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E442FFDA22F00F297D8 /* QRScannerViewController.swift */; };
+		10333EC82FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E532FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift */; };
+		10333EC92FFDA22F00F297D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6A2FFDA22F00F297D8 /* BaseViewController.swift */; };
+		10333ECA2FFDA22F00F297D8 /* String+getHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E082FFDA22F00F297D8 /* String+getHeight.swift */; };
+		10333ECB2FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6B2FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift */; };
+		10333ECC2FFDA22F00F297D8 /* BlurLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFB2FFDA22F00F297D8 /* BlurLoader.swift */; };
+		10333ECD2FFDA22F00F297D8 /* PhoneCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E752FFDA22F00F297D8 /* PhoneCaptureViewController.swift */; };
+		10333ECE2FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE12FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift */; };
+		10333ECF2FFDA22F00F297D8 /* VerifyUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 10333E8B2FFDA22F00F297D8 /* VerifyUI.docc */; };
+		10333ED02FFDA22F00F297D8 /* SCAVCaptureWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4B2FFDA22F00F297D8 /* SCAVCaptureWrapper.swift */; };
+		10333ED12FFDA22F00F297D8 /* DataCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E7A2FFDA22F00F297D8 /* DataCaptureViewController.swift */; };
+		10333ED22FFDA22F00F297D8 /* UITextField+addLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1E2FFDA22F00F297D8 /* UITextField+addLeftView.swift */; };
+		10333ED32FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE02FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift */; };
+		10333ED42FFDA22F00F297D8 /* CustomMenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF02FFDA22F00F297D8 /* CustomMenuConstants.swift */; };
+		10333ED52FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1F2FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift */; };
+		10333ED62FFDA22F00F297D8 /* LivenessCheckError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4E2FFDA22F00F297D8 /* LivenessCheckError.swift */; };
+		10333ED72FFDA22F00F297D8 /* CustomPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF42FFDA22F00F297D8 /* CustomPhoneView.swift */; };
+		10333ED82FFDA22F00F297D8 /* UINavigationController+interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1C2FFDA22F00F297D8 /* UINavigationController+interface.swift */; };
+		10333ED92FFDA22F00F297D8 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFC2FFDA22F00F297D8 /* BorderedButton.swift */; };
+		10333EDA2FFDA22F00F297D8 /* UIView+fixInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E232FFDA22F00F297D8 /* UIView+fixInView.swift */; };
+		10333EDB2FFDA22F00F297D8 /* MedianLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5A2FFDA22F00F297D8 /* MedianLine.swift */; };
+		10333EDC2FFDA22F00F297D8 /* UIView+BlurLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E222FFDA22F00F297D8 /* UIView+BlurLoader.swift */; };
+		10333EDD2FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6E2FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift */; };
+		10333EDE2FFDA22F00F297D8 /* UIColor+loadColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E122FFDA22F00F297D8 /* UIColor+loadColor.swift */; };
+		10333EDF2FFDA22F00F297D8 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E302FFDA22F00F297D8 /* DocumentModel.swift */; };
+		10333EE02FFDA22F00F297D8 /* CustomCountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDE2FFDA22F00F297D8 /* CustomCountryPickerViewController.swift */; };
+		10333EE12FFDA22F00F297D8 /* OvalCameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5F2FFDA22F00F297D8 /* OvalCameraOverlayView.swift */; };
+		10333EE22FFDA22F00F297D8 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E852FFDA22F00F297D8 /* ProcessingViewController.swift */; };
+		10333EE32FFDA22F00F297D8 /* CustomMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF22FFDA22F00F297D8 /* CustomMenuButton.swift */; };
+		10333EE42FFDA22F00F297D8 /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF72FFDA22F00F297D8 /* CustomToastView.swift */; };
+		10333EE52FFDA22F00F297D8 /* FaceLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E582FFDA22F00F297D8 /* FaceLandmark.swift */; };
+		10333EE62FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E762FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift */; };
+		10333EE72FFDA22F00F297D8 /* PingOneVerifyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E342FFDA22F00F297D8 /* PingOneVerifyHelper.swift */; };
+		10333EE82FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E182FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift */; };
+		10333EE92FFDA22F00F297D8 /* ProcessingColorHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E022FFDA22F00F297D8 /* ProcessingColorHolderView.swift */; };
+		10333EEA2FFDA22F00F297D8 /* ImageTransformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E652FFDA22F00F297D8 /* ImageTransformations.swift */; };
+		10333EEB2FFDA22F00F297D8 /* PingOneNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E012FFDA22F00F297D8 /* PingOneNavController.swift */; };
+		10333EEC2FFDA22F00F297D8 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E702FFDA22F00F297D8 /* OtpViewController.swift */; };
+		10333EED2FFDA22F00F297D8 /* AppthemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DD92FFDA22F00F297D8 /* AppthemeHandler.swift */; };
+		10333EEE2FFDA22F00F297D8 /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0A2FFDA22F00F297D8 /* String+UIImage.swift */; };
+		10333EEF2FFDA22F00F297D8 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFA2FFDA22F00F297D8 /* BaseView.swift */; };
+		10333EF02FFDA22F00F297D8 /* CountryCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E682FFDA22F00F297D8 /* CountryCodes.swift */; };
+		10333EF12FFDA22F00F297D8 /* VerifyUIExports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E8C2FFDA22F00F297D8 /* VerifyUIExports.swift */; };
+		10333EF22FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E512FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift */; };
+		10333EF32FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2E2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings */; };
+		10333EF42FFDA22F00F297D8 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DE42FFDA22F00F297D8 /* ImageCell.xib */; };
+		10333EF52FFDA22F00F297D8 /* SelfieCaptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E602FFDA22F00F297D8 /* SelfieCaptureView.xib */; };
+		10333EF62FFDA22F00F297D8 /* SelfiePreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E612FFDA22F00F297D8 /* SelfiePreviewView.xib */; };
+		10333EF72FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E292FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib */; };
+		10333EF82FFDA22F00F297D8 /* CustomCountryPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DDF2FFDA22F00F297D8 /* CustomCountryPickerViewController.xib */; };
+		10333EF92FFDA22F00F297D8 /* CustomToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DF82FFDA22F00F297D8 /* CustomToastView.xib */; };
+		10333EFA2FFDA22F00F297D8 /* PingOneNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E322FFDA22F00F297D8 /* PingOneNavController.xib */; };
+		10333EFB2FFDA22F00F297D8 /* DocumentSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E812FFDA22F00F297D8 /* DocumentSelectionCell.xib */; };
+		10333EFC2FFDA22F00F297D8 /* CustomPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DF52FFDA22F00F297D8 /* CustomPhoneView.xib */; };
+		10333EFD2FFDA22F00F297D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10333E892FFDA22F00F297D8 /* Assets.xcassets */; };
+		10333EFE2FFDA22F00F297D8 /* LabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DE82FFDA22F00F297D8 /* LabelCell.xib */; };
+		10333EFF2FFDA22F00F297D8 /* DataCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E7B2FFDA22F00F297D8 /* DataCaptureViewController.xib */; };
+		10333F002FFDA22F00F297D8 /* DocumentSelectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E822FFDA22F00F297D8 /* DocumentSelectionVC.xib */; };
+		10333F012FFDA22F00F297D8 /* OtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E712FFDA22F00F297D8 /* OtpViewController.xib */; };
+		10333F022FFDA22F00F297D8 /* RetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E472FFDA22F00F297D8 /* RetryViewController.xib */; };
+		10333F032FFDA22F00F297D8 /* QrScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E432FFDA22F00F297D8 /* QrScannerView.xib */; };
+		10333F042FFDA22F00F297D8 /* DocumentCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E7E2FFDA22F00F297D8 /* DocumentCaptureViewController.xib */; };
+		10333F052FFDA22F00F297D8 /* CustomMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DEF2FFDA22F00F297D8 /* CustomMenu.xib */; };
+		10333F062FFDA22F00F297D8 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E3E2FFDA22F00F297D8 /* PreviewViewController.xib */; };
+		10333F072FFDA22F00F297D8 /* GeolocationPermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2B2FFDA22F00F297D8 /* GeolocationPermissionViewController.xib */; };
+		10333F082FFDA22F00F297D8 /* ProcessingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E862FFDA22F00F297D8 /* ProcessingViewController.xib */; };
+		10333F092FFDA22F00F297D8 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2D2FFDA22F00F297D8 /* countries.json */; };
+		10333F0A2FFDA22F00F297D8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFD2FFDA22F00F297D8 /* CustomImageView.swift */; };
+		10333F0B2FFDA22F00F297D8 /* QrScannerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E402FFDA22F00F297D8 /* QrScannerContract.swift */; };
+		10333F0C2FFDA22F00F297D8 /* DataCaptureConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E792FFDA22F00F297D8 /* DataCaptureConstants.swift */; };
+		10333F0D2FFDA22F00F297D8 /* SampleBufferUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E662FFDA22F00F297D8 /* SampleBufferUtils.swift */; };
+		10333F0E2FFDA22F00F297D8 /* UILabel+textWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1A2FFDA22F00F297D8 /* UILabel+textWidth.swift */; };
+		10333F0F2FFDA22F00F297D8 /* TimeInterval+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0C2FFDA22F00F297D8 /* TimeInterval+format.swift */; };
+		10333F102FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E372FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift */; };
+		10333F112FFDA22F00F297D8 /* VerifyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E042FFDA22F00F297D8 /* VerifyButton.swift */; };
+		10333F122FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDD2FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift */; };
+		10333F132FFDA22F00F297D8 /* DocumentCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E7D2FFDA22F00F297D8 /* DocumentCaptureViewController.swift */; };
+		10333F142FFDA22F00F297D8 /* UIImage+loadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E162FFDA22F00F297D8 /* UIImage+loadImage.swift */; };
+		10333F152FFDA22F00F297D8 /* CustomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DEE2FFDA22F00F297D8 /* CustomMenu.swift */; };
+		10333F162FFDA22F00F297D8 /* RetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E462FFDA22F00F297D8 /* RetryViewController.swift */; };
+		10333F172FFDA22F00F297D8 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E002FFDA22F00F297D8 /* OTPTextField.swift */; };
+		10333F182FFDA22F00F297D8 /* SelfiePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E622FFDA22F00F297D8 /* SelfiePreviewViewController.swift */; };
+		10333F192FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E282FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift */; };
+		10333F1A2FFDA22F00F297D8 /* AtomicWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E552FFDA22F00F297D8 /* AtomicWrapper.swift */; };
+		10333F1B2FFDA22F00F297D8 /* UIAction+handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0E2FFDA22F00F297D8 /* UIAction+handler.swift */; };
+		10333F1C2FFDA22F00F297D8 /* LabelCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE92FFDA22F00F297D8 /* LabelCellContent.swift */; };
+		10333F1D2FFDA22F00F297D8 /* AttributedStringProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDA2FFDA22F00F297D8 /* AttributedStringProvider.swift */; };
+		10333F1E2FFDA22F00F297D8 /* DocumentCaptureContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3A2FFDA22F00F297D8 /* DocumentCaptureContract.swift */; };
+		10333F1F2FFDA22F00F297D8 /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5D2FFDA22F00F297D8 /* CameraOverlayView.swift */; };
+		10333F202FFDA22F00F297D8 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E092FFDA22F00F297D8 /* String+localized.swift */; };
+		10333F212FFDA22F00F297D8 /* CenterTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5E2FFDA22F00F297D8 /* CenterTextLayer.swift */; };
+		10333F222FFDA22F00F297D8 /* ImageCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE52FFDA22F00F297D8 /* ImageCellContent.swift */; };
+		10333F232FFDA22F00F297D8 /* SelfieQAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4F2FFDA22F00F297D8 /* SelfieQAError.swift */; };
+		10333F242FFDA22F00F297D8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E562FFDA22F00F297D8 /* Expression.swift */; };
+		10333F252FFDA22F00F297D8 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E572FFDA22F00F297D8 /* Face.swift */; };
+		10333F262FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E252FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift */; };
+		10333F272FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E352FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift */; };
+		10333F282FFDA22F00F297D8 /* SCFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E492FFDA22F00F297D8 /* SCFace.swift */; };
+		10333F292FFDA22F00F297D8 /* CustomMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DEB2FFDA22F00F297D8 /* CustomMenuItemCell.swift */; };
+		10333F2A2FFDA22F00F297D8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE32FFDA22F00F297D8 /* ImageCell.swift */; };
+		10333F2B2FFDA22F00F297D8 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFF2FFDA22F00F297D8 /* HeaderLabel.swift */; };
+		10333F2C2FFDA22F00F297D8 /* UITextField+setPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E202FFDA22F00F297D8 /* UITextField+setPadding.swift */; };
+		10333F2D2FFDA22F00F297D8 /* TintColorHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E032FFDA22F00F297D8 /* TintColorHolderView.swift */; };
+		10333F2E2FFDA22F00F297D8 /* BaseViewController+navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E062FFDA22F00F297D8 /* BaseViewController+navigation.swift */; };
+		10333F2F2FFDA22F00F297D8 /* CGRect+CenteredRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E522FFDA22F00F297D8 /* CGRect+CenteredRect.swift */; };
+		10333F302FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E772FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift */; };
+		10333F312FFDA22F00F297D8 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE72FFDA22F00F297D8 /* LabelCell.swift */; };
+		10333F322FFDA22F00F297D8 /* UIImage+resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E172FFDA22F00F297D8 /* UIImage+resizeImage.swift */; };
+		10333F332FFDA22F00F297D8 /* QrScannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E422FFDA22F00F297D8 /* QrScannerPresenter.swift */; };
+		10333F342FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E102FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift */; };
+		10333F352FFDA22F00F297D8 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3D2FFDA22F00F297D8 /* PreviewViewController.swift */; };
+		10333F362FFDA22F00F297D8 /* QrScannerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E412FFDA22F00F297D8 /* QrScannerListener.swift */; };
+		10333F372FFDA22F00F297D8 /* LandmarkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E592FFDA22F00F297D8 /* LandmarkType.swift */; };
+		10333F382FFDA22F00F297D8 /* UIImage+addGrandient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E142FFDA22F00F297D8 /* UIImage+addGrandient.swift */; };
+		10333F392FFDA22F00F297D8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFE2FFDA22F00F297D8 /* CustomTextField.swift */; };
+		10333F3A2FFDA22F00F297D8 /* DocumentSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E802FFDA22F00F297D8 /* DocumentSelectionCell.swift */; };
+		10333F3B2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E2A2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift */; };
+		10333F3C2FFDA22F00F297D8 /* SelfieQAResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5B2FFDA22F00F297D8 /* SelfieQAResult.swift */; };
+		10333F3D2FFDA22F00F297D8 /* UIImage+addImagePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E152FFDA22F00F297D8 /* UIImage+addImagePadding.swift */; };
+		10333F3E2FFDA22F00F297D8 /* DocumentCapturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3B2FFDA22F00F297D8 /* DocumentCapturePresenter.swift */; };
+		10333F3F2FFDA22F00F297D8 /* DocumentSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E832FFDA22F00F297D8 /* DocumentSelectionViewController.swift */; };
+		10333F402FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E722FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift */; };
+		10333F412FFDA22F00F297D8 /* PhoneCaptureUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E742FFDA22F00F297D8 /* PhoneCaptureUtils.swift */; };
+		10333F422FFDA22F00F297D8 /* EmailCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6D2FFDA22F00F297D8 /* EmailCaptureViewController.swift */; };
+		10333F432FFDA22F00F297D8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E442FFDA22F00F297D8 /* QRScannerViewController.swift */; };
+		10333F442FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E532FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift */; };
+		10333F452FFDA22F00F297D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6A2FFDA22F00F297D8 /* BaseViewController.swift */; };
+		10333F462FFDA22F00F297D8 /* String+getHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E082FFDA22F00F297D8 /* String+getHeight.swift */; };
+		10333F472FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6B2FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift */; };
+		10333F482FFDA22F00F297D8 /* BlurLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFB2FFDA22F00F297D8 /* BlurLoader.swift */; };
+		10333F492FFDA22F00F297D8 /* PhoneCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E752FFDA22F00F297D8 /* PhoneCaptureViewController.swift */; };
+		10333F4A2FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE12FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift */; };
+		10333F4B2FFDA22F00F297D8 /* VerifyUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 10333E8B2FFDA22F00F297D8 /* VerifyUI.docc */; };
+		10333F4C2FFDA22F00F297D8 /* SCAVCaptureWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4B2FFDA22F00F297D8 /* SCAVCaptureWrapper.swift */; };
+		10333F4D2FFDA22F00F297D8 /* DataCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E7A2FFDA22F00F297D8 /* DataCaptureViewController.swift */; };
+		10333F4E2FFDA22F00F297D8 /* UITextField+addLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1E2FFDA22F00F297D8 /* UITextField+addLeftView.swift */; };
+		10333F4F2FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE02FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift */; };
+		10333F502FFDA22F00F297D8 /* CustomMenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF02FFDA22F00F297D8 /* CustomMenuConstants.swift */; };
+		10333F512FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1F2FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift */; };
+		10333F522FFDA22F00F297D8 /* LivenessCheckError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4E2FFDA22F00F297D8 /* LivenessCheckError.swift */; };
+		10333F532FFDA22F00F297D8 /* CustomPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF42FFDA22F00F297D8 /* CustomPhoneView.swift */; };
+		10333F542FFDA22F00F297D8 /* UINavigationController+interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1C2FFDA22F00F297D8 /* UINavigationController+interface.swift */; };
+		10333F552FFDA22F00F297D8 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFC2FFDA22F00F297D8 /* BorderedButton.swift */; };
+		10333F562FFDA22F00F297D8 /* UIView+fixInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E232FFDA22F00F297D8 /* UIView+fixInView.swift */; };
+		10333F572FFDA22F00F297D8 /* MedianLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5A2FFDA22F00F297D8 /* MedianLine.swift */; };
+		10333F582FFDA22F00F297D8 /* UIView+BlurLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E222FFDA22F00F297D8 /* UIView+BlurLoader.swift */; };
+		10333F592FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6E2FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift */; };
+		10333F5A2FFDA22F00F297D8 /* UIColor+loadColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E122FFDA22F00F297D8 /* UIColor+loadColor.swift */; };
+		10333F5B2FFDA22F00F297D8 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E302FFDA22F00F297D8 /* DocumentModel.swift */; };
+		10333F5C2FFDA22F00F297D8 /* CustomCountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDE2FFDA22F00F297D8 /* CustomCountryPickerViewController.swift */; };
+		10333F5D2FFDA22F00F297D8 /* OvalCameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5F2FFDA22F00F297D8 /* OvalCameraOverlayView.swift */; };
+		10333F5E2FFDA22F00F297D8 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E852FFDA22F00F297D8 /* ProcessingViewController.swift */; };
+		10333F5F2FFDA22F00F297D8 /* CustomMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF22FFDA22F00F297D8 /* CustomMenuButton.swift */; };
+		10333F602FFDA22F00F297D8 /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF72FFDA22F00F297D8 /* CustomToastView.swift */; };
+		10333F612FFDA22F00F297D8 /* FaceLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E582FFDA22F00F297D8 /* FaceLandmark.swift */; };
+		10333F622FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E762FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift */; };
+		10333F632FFDA22F00F297D8 /* PingOneVerifyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E342FFDA22F00F297D8 /* PingOneVerifyHelper.swift */; };
+		10333F642FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E182FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift */; };
+		10333F652FFDA22F00F297D8 /* ProcessingColorHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E022FFDA22F00F297D8 /* ProcessingColorHolderView.swift */; };
+		10333F662FFDA22F00F297D8 /* ImageTransformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E652FFDA22F00F297D8 /* ImageTransformations.swift */; };
+		10333F672FFDA22F00F297D8 /* PingOneNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E012FFDA22F00F297D8 /* PingOneNavController.swift */; };
+		10333F682FFDA22F00F297D8 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E702FFDA22F00F297D8 /* OtpViewController.swift */; };
+		10333F692FFDA22F00F297D8 /* AppthemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DD92FFDA22F00F297D8 /* AppthemeHandler.swift */; };
+		10333F6A2FFDA22F00F297D8 /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0A2FFDA22F00F297D8 /* String+UIImage.swift */; };
+		10333F6B2FFDA22F00F297D8 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFA2FFDA22F00F297D8 /* BaseView.swift */; };
+		10333F6C2FFDA22F00F297D8 /* CountryCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E682FFDA22F00F297D8 /* CountryCodes.swift */; };
+		10333F6D2FFDA22F00F297D8 /* VerifyUIExports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E8C2FFDA22F00F297D8 /* VerifyUIExports.swift */; };
+		10333F6E2FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E512FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift */; };
+		10333F6F2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2E2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings */; };
+		10333F702FFDA22F00F297D8 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DE42FFDA22F00F297D8 /* ImageCell.xib */; };
+		10333F712FFDA22F00F297D8 /* SelfieCaptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E602FFDA22F00F297D8 /* SelfieCaptureView.xib */; };
+		10333F722FFDA22F00F297D8 /* SelfiePreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E612FFDA22F00F297D8 /* SelfiePreviewView.xib */; };
+		10333F732FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E292FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib */; };
+		10333F742FFDA22F00F297D8 /* CustomCountryPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DDF2FFDA22F00F297D8 /* CustomCountryPickerViewController.xib */; };
+		10333F752FFDA22F00F297D8 /* CustomToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DF82FFDA22F00F297D8 /* CustomToastView.xib */; };
+		10333F762FFDA22F00F297D8 /* PingOneNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E322FFDA22F00F297D8 /* PingOneNavController.xib */; };
+		10333F772FFDA22F00F297D8 /* DocumentSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E812FFDA22F00F297D8 /* DocumentSelectionCell.xib */; };
+		10333F782FFDA22F00F297D8 /* CustomPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DF52FFDA22F00F297D8 /* CustomPhoneView.xib */; };
+		10333F792FFDA22F00F297D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10333E892FFDA22F00F297D8 /* Assets.xcassets */; };
+		10333F7A2FFDA22F00F297D8 /* LabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DE82FFDA22F00F297D8 /* LabelCell.xib */; };
+		10333F7B2FFDA22F00F297D8 /* DataCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E7B2FFDA22F00F297D8 /* DataCaptureViewController.xib */; };
+		10333F7C2FFDA22F00F297D8 /* DocumentSelectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E822FFDA22F00F297D8 /* DocumentSelectionVC.xib */; };
+		10333F7D2FFDA22F00F297D8 /* OtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E712FFDA22F00F297D8 /* OtpViewController.xib */; };
+		10333F7E2FFDA22F00F297D8 /* RetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E472FFDA22F00F297D8 /* RetryViewController.xib */; };
+		10333F7F2FFDA22F00F297D8 /* QrScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E432FFDA22F00F297D8 /* QrScannerView.xib */; };
+		10333F802FFDA22F00F297D8 /* DocumentCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E7E2FFDA22F00F297D8 /* DocumentCaptureViewController.xib */; };
+		10333F812FFDA22F00F297D8 /* CustomMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DEF2FFDA22F00F297D8 /* CustomMenu.xib */; };
+		10333F822FFDA22F00F297D8 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E3E2FFDA22F00F297D8 /* PreviewViewController.xib */; };
+		10333F832FFDA22F00F297D8 /* GeolocationPermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2B2FFDA22F00F297D8 /* GeolocationPermissionViewController.xib */; };
+		10333F842FFDA22F00F297D8 /* ProcessingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E862FFDA22F00F297D8 /* ProcessingViewController.xib */; };
+		10333F852FFDA22F00F297D8 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2D2FFDA22F00F297D8 /* countries.json */; };
+		10333F862FFDA22F00F297D8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFD2FFDA22F00F297D8 /* CustomImageView.swift */; };
+		10333F872FFDA22F00F297D8 /* QrScannerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E402FFDA22F00F297D8 /* QrScannerContract.swift */; };
+		10333F882FFDA22F00F297D8 /* DataCaptureConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E792FFDA22F00F297D8 /* DataCaptureConstants.swift */; };
+		10333F892FFDA22F00F297D8 /* SampleBufferUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E662FFDA22F00F297D8 /* SampleBufferUtils.swift */; };
+		10333F8A2FFDA22F00F297D8 /* UILabel+textWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1A2FFDA22F00F297D8 /* UILabel+textWidth.swift */; };
+		10333F8B2FFDA22F00F297D8 /* TimeInterval+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0C2FFDA22F00F297D8 /* TimeInterval+format.swift */; };
+		10333F8C2FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E372FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift */; };
+		10333F8D2FFDA22F00F297D8 /* VerifyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E042FFDA22F00F297D8 /* VerifyButton.swift */; };
+		10333F8E2FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDD2FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift */; };
+		10333F8F2FFDA22F00F297D8 /* DocumentCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E7D2FFDA22F00F297D8 /* DocumentCaptureViewController.swift */; };
+		10333F902FFDA22F00F297D8 /* UIImage+loadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E162FFDA22F00F297D8 /* UIImage+loadImage.swift */; };
+		10333F912FFDA22F00F297D8 /* CustomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DEE2FFDA22F00F297D8 /* CustomMenu.swift */; };
+		10333F922FFDA22F00F297D8 /* RetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E462FFDA22F00F297D8 /* RetryViewController.swift */; };
+		10333F932FFDA22F00F297D8 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E002FFDA22F00F297D8 /* OTPTextField.swift */; };
+		10333F942FFDA22F00F297D8 /* SelfiePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E622FFDA22F00F297D8 /* SelfiePreviewViewController.swift */; };
+		10333F952FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E282FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift */; };
+		10333F962FFDA22F00F297D8 /* AtomicWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E552FFDA22F00F297D8 /* AtomicWrapper.swift */; };
+		10333F972FFDA22F00F297D8 /* UIAction+handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0E2FFDA22F00F297D8 /* UIAction+handler.swift */; };
+		10333F982FFDA22F00F297D8 /* LabelCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE92FFDA22F00F297D8 /* LabelCellContent.swift */; };
+		10333F992FFDA22F00F297D8 /* AttributedStringProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDA2FFDA22F00F297D8 /* AttributedStringProvider.swift */; };
+		10333F9A2FFDA22F00F297D8 /* DocumentCaptureContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3A2FFDA22F00F297D8 /* DocumentCaptureContract.swift */; };
+		10333F9B2FFDA22F00F297D8 /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5D2FFDA22F00F297D8 /* CameraOverlayView.swift */; };
+		10333F9C2FFDA22F00F297D8 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E092FFDA22F00F297D8 /* String+localized.swift */; };
+		10333F9D2FFDA22F00F297D8 /* CenterTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5E2FFDA22F00F297D8 /* CenterTextLayer.swift */; };
+		10333F9E2FFDA22F00F297D8 /* ImageCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE52FFDA22F00F297D8 /* ImageCellContent.swift */; };
+		10333F9F2FFDA22F00F297D8 /* SelfieQAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4F2FFDA22F00F297D8 /* SelfieQAError.swift */; };
+		10333FA02FFDA22F00F297D8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E562FFDA22F00F297D8 /* Expression.swift */; };
+		10333FA12FFDA22F00F297D8 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E572FFDA22F00F297D8 /* Face.swift */; };
+		10333FA22FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E252FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift */; };
+		10333FA32FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E352FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift */; };
+		10333FA42FFDA22F00F297D8 /* SCFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E492FFDA22F00F297D8 /* SCFace.swift */; };
+		10333FA52FFDA22F00F297D8 /* CustomMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DEB2FFDA22F00F297D8 /* CustomMenuItemCell.swift */; };
+		10333FA62FFDA22F00F297D8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE32FFDA22F00F297D8 /* ImageCell.swift */; };
+		10333FA72FFDA22F00F297D8 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFF2FFDA22F00F297D8 /* HeaderLabel.swift */; };
+		10333FA82FFDA22F00F297D8 /* UITextField+setPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E202FFDA22F00F297D8 /* UITextField+setPadding.swift */; };
+		10333FA92FFDA22F00F297D8 /* TintColorHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E032FFDA22F00F297D8 /* TintColorHolderView.swift */; };
+		10333FAA2FFDA22F00F297D8 /* BaseViewController+navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E062FFDA22F00F297D8 /* BaseViewController+navigation.swift */; };
+		10333FAB2FFDA22F00F297D8 /* CGRect+CenteredRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E522FFDA22F00F297D8 /* CGRect+CenteredRect.swift */; };
+		10333FAC2FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E772FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift */; };
+		10333FAD2FFDA22F00F297D8 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE72FFDA22F00F297D8 /* LabelCell.swift */; };
+		10333FAE2FFDA22F00F297D8 /* UIImage+resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E172FFDA22F00F297D8 /* UIImage+resizeImage.swift */; };
+		10333FAF2FFDA22F00F297D8 /* QrScannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E422FFDA22F00F297D8 /* QrScannerPresenter.swift */; };
+		10333FB02FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E102FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift */; };
+		10333FB12FFDA22F00F297D8 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3D2FFDA22F00F297D8 /* PreviewViewController.swift */; };
+		10333FB22FFDA22F00F297D8 /* QrScannerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E412FFDA22F00F297D8 /* QrScannerListener.swift */; };
+		10333FB32FFDA22F00F297D8 /* LandmarkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E592FFDA22F00F297D8 /* LandmarkType.swift */; };
+		10333FB42FFDA22F00F297D8 /* UIImage+addGrandient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E142FFDA22F00F297D8 /* UIImage+addGrandient.swift */; };
+		10333FB52FFDA22F00F297D8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFE2FFDA22F00F297D8 /* CustomTextField.swift */; };
+		10333FB62FFDA22F00F297D8 /* DocumentSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E802FFDA22F00F297D8 /* DocumentSelectionCell.swift */; };
+		10333FB72FFDA22F00F297D8 /* GeolocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E2A2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift */; };
+		10333FB82FFDA22F00F297D8 /* SelfieQAResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5B2FFDA22F00F297D8 /* SelfieQAResult.swift */; };
+		10333FB92FFDA22F00F297D8 /* UIImage+addImagePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E152FFDA22F00F297D8 /* UIImage+addImagePadding.swift */; };
+		10333FBA2FFDA22F00F297D8 /* DocumentCapturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E3B2FFDA22F00F297D8 /* DocumentCapturePresenter.swift */; };
+		10333FBB2FFDA22F00F297D8 /* DocumentSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E832FFDA22F00F297D8 /* DocumentSelectionViewController.swift */; };
+		10333FBC2FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E722FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift */; };
+		10333FBD2FFDA22F00F297D8 /* PhoneCaptureUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E742FFDA22F00F297D8 /* PhoneCaptureUtils.swift */; };
+		10333FBE2FFDA22F00F297D8 /* EmailCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6D2FFDA22F00F297D8 /* EmailCaptureViewController.swift */; };
+		10333FBF2FFDA22F00F297D8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E442FFDA22F00F297D8 /* QRScannerViewController.swift */; };
+		10333FC02FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E532FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift */; };
+		10333FC12FFDA22F00F297D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6A2FFDA22F00F297D8 /* BaseViewController.swift */; };
+		10333FC22FFDA22F00F297D8 /* String+getHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E082FFDA22F00F297D8 /* String+getHeight.swift */; };
+		10333FC32FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6B2FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift */; };
+		10333FC42FFDA22F00F297D8 /* BlurLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFB2FFDA22F00F297D8 /* BlurLoader.swift */; };
+		10333FC52FFDA22F00F297D8 /* PhoneCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E752FFDA22F00F297D8 /* PhoneCaptureViewController.swift */; };
+		10333FC62FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE12FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift */; };
+		10333FC72FFDA22F00F297D8 /* VerifyUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 10333E8B2FFDA22F00F297D8 /* VerifyUI.docc */; };
+		10333FC82FFDA22F00F297D8 /* SCAVCaptureWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4B2FFDA22F00F297D8 /* SCAVCaptureWrapper.swift */; };
+		10333FC92FFDA22F00F297D8 /* DataCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E7A2FFDA22F00F297D8 /* DataCaptureViewController.swift */; };
+		10333FCA2FFDA22F00F297D8 /* UITextField+addLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1E2FFDA22F00F297D8 /* UITextField+addLeftView.swift */; };
+		10333FCB2FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DE02FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift */; };
+		10333FCC2FFDA22F00F297D8 /* CustomMenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF02FFDA22F00F297D8 /* CustomMenuConstants.swift */; };
+		10333FCD2FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1F2FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift */; };
+		10333FCE2FFDA22F00F297D8 /* LivenessCheckError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E4E2FFDA22F00F297D8 /* LivenessCheckError.swift */; };
+		10333FCF2FFDA22F00F297D8 /* CustomPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF42FFDA22F00F297D8 /* CustomPhoneView.swift */; };
+		10333FD02FFDA22F00F297D8 /* UINavigationController+interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E1C2FFDA22F00F297D8 /* UINavigationController+interface.swift */; };
+		10333FD12FFDA22F00F297D8 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFC2FFDA22F00F297D8 /* BorderedButton.swift */; };
+		10333FD22FFDA22F00F297D8 /* UIView+fixInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E232FFDA22F00F297D8 /* UIView+fixInView.swift */; };
+		10333FD32FFDA22F00F297D8 /* MedianLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5A2FFDA22F00F297D8 /* MedianLine.swift */; };
+		10333FD42FFDA22F00F297D8 /* UIView+BlurLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E222FFDA22F00F297D8 /* UIView+BlurLoader.swift */; };
+		10333FD52FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E6E2FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift */; };
+		10333FD62FFDA22F00F297D8 /* UIColor+loadColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E122FFDA22F00F297D8 /* UIColor+loadColor.swift */; };
+		10333FD72FFDA22F00F297D8 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E302FFDA22F00F297D8 /* DocumentModel.swift */; };
+		10333FD82FFDA22F00F297D8 /* CustomCountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DDE2FFDA22F00F297D8 /* CustomCountryPickerViewController.swift */; };
+		10333FD92FFDA22F00F297D8 /* OvalCameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E5F2FFDA22F00F297D8 /* OvalCameraOverlayView.swift */; };
+		10333FDA2FFDA22F00F297D8 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E852FFDA22F00F297D8 /* ProcessingViewController.swift */; };
+		10333FDB2FFDA22F00F297D8 /* CustomMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF22FFDA22F00F297D8 /* CustomMenuButton.swift */; };
+		10333FDC2FFDA22F00F297D8 /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DF72FFDA22F00F297D8 /* CustomToastView.swift */; };
+		10333FDD2FFDA22F00F297D8 /* FaceLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E582FFDA22F00F297D8 /* FaceLandmark.swift */; };
+		10333FDE2FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E762FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift */; };
+		10333FDF2FFDA22F00F297D8 /* PingOneVerifyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E342FFDA22F00F297D8 /* PingOneVerifyHelper.swift */; };
+		10333FE02FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E182FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift */; };
+		10333FE12FFDA22F00F297D8 /* ProcessingColorHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E022FFDA22F00F297D8 /* ProcessingColorHolderView.swift */; };
+		10333FE22FFDA22F00F297D8 /* ImageTransformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E652FFDA22F00F297D8 /* ImageTransformations.swift */; };
+		10333FE32FFDA22F00F297D8 /* PingOneNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E012FFDA22F00F297D8 /* PingOneNavController.swift */; };
+		10333FE42FFDA22F00F297D8 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E702FFDA22F00F297D8 /* OtpViewController.swift */; };
+		10333FE52FFDA22F00F297D8 /* AppthemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DD92FFDA22F00F297D8 /* AppthemeHandler.swift */; };
+		10333FE62FFDA22F00F297D8 /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E0A2FFDA22F00F297D8 /* String+UIImage.swift */; };
+		10333FE72FFDA22F00F297D8 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333DFA2FFDA22F00F297D8 /* BaseView.swift */; };
+		10333FE82FFDA22F00F297D8 /* CountryCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E682FFDA22F00F297D8 /* CountryCodes.swift */; };
+		10333FE92FFDA22F00F297D8 /* VerifyUIExports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E8C2FFDA22F00F297D8 /* VerifyUIExports.swift */; };
+		10333FEA2FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10333E512FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift */; };
+		10333FEB2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2E2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings */; };
+		10333FEC2FFDA22F00F297D8 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DE42FFDA22F00F297D8 /* ImageCell.xib */; };
+		10333FED2FFDA22F00F297D8 /* SelfieCaptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E602FFDA22F00F297D8 /* SelfieCaptureView.xib */; };
+		10333FEE2FFDA22F00F297D8 /* SelfiePreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E612FFDA22F00F297D8 /* SelfiePreviewView.xib */; };
+		10333FEF2FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E292FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib */; };
+		10333FF02FFDA22F00F297D8 /* CustomCountryPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DDF2FFDA22F00F297D8 /* CustomCountryPickerViewController.xib */; };
+		10333FF12FFDA22F00F297D8 /* CustomToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DF82FFDA22F00F297D8 /* CustomToastView.xib */; };
+		10333FF22FFDA22F00F297D8 /* PingOneNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E322FFDA22F00F297D8 /* PingOneNavController.xib */; };
+		10333FF32FFDA22F00F297D8 /* DocumentSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E812FFDA22F00F297D8 /* DocumentSelectionCell.xib */; };
+		10333FF42FFDA22F00F297D8 /* CustomPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DF52FFDA22F00F297D8 /* CustomPhoneView.xib */; };
+		10333FF52FFDA22F00F297D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10333E892FFDA22F00F297D8 /* Assets.xcassets */; };
+		10333FF62FFDA22F00F297D8 /* LabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DE82FFDA22F00F297D8 /* LabelCell.xib */; };
+		10333FF72FFDA22F00F297D8 /* DataCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E7B2FFDA22F00F297D8 /* DataCaptureViewController.xib */; };
+		10333FF82FFDA22F00F297D8 /* DocumentSelectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E822FFDA22F00F297D8 /* DocumentSelectionVC.xib */; };
+		10333FF92FFDA22F00F297D8 /* OtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E712FFDA22F00F297D8 /* OtpViewController.xib */; };
+		10333FFA2FFDA22F00F297D8 /* RetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E472FFDA22F00F297D8 /* RetryViewController.xib */; };
+		10333FFB2FFDA22F00F297D8 /* QrScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E432FFDA22F00F297D8 /* QrScannerView.xib */; };
+		10333FFC2FFDA22F00F297D8 /* DocumentCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E7E2FFDA22F00F297D8 /* DocumentCaptureViewController.xib */; };
+		10333FFD2FFDA22F00F297D8 /* CustomMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333DEF2FFDA22F00F297D8 /* CustomMenu.xib */; };
+		10333FFE2FFDA22F00F297D8 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E3E2FFDA22F00F297D8 /* PreviewViewController.xib */; };
+		10333FFF2FFDA22F00F297D8 /* GeolocationPermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2B2FFDA22F00F297D8 /* GeolocationPermissionViewController.xib */; };
+		103340002FFDA22F00F297D8 /* ProcessingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10333E862FFDA22F00F297D8 /* ProcessingViewController.xib */; };
+		103340012FFDA22F00F297D8 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 10333E2D2FFDA22F00F297D8 /* countries.json */; };
 		103501E22DD6323D005F2E74 /* UnauthenticatedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103501E12DD6323D005F2E74 /* UnauthenticatedContentView.swift */; };
 		103501E42DD78E30005F2E74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 103501E32DD78E30005F2E74 /* GoogleService-Info.plist */; };
 		103501E52DD78ECD005F2E74 /* GoogleAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104DD86C2D78D0E600C25A26 /* GoogleAnalytics.swift */; };
@@ -99,30 +471,14 @@
 		1072D7D02E4B7C2D0086C8BA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1072D7CF2E4B7C2D0086C8BA /* Localizable.xcstrings */; };
 		1072D7D32E4B81640086C8BA /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1072D7D22E4B81600086C8BA /* SideMenuView.swift */; };
 		1072D7D52E4B81CA0086C8BA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1072D7D42E4B81C60086C8BA /* SettingsView.swift */; };
-		107BBA1C2F4F5FB600FE5496 /* BlinkID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */; };
-		107BBA1D2F4F5FB600FE5496 /* BlinkID.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA1E2F4F5FB900FE5496 /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA082F4F5F7C00FE5496 /* CryptoTools.xcframework */; };
 		107BBA1F2F4F5FB900FE5496 /* CryptoTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA082F4F5F7C00FE5496 /* CryptoTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA202F4F5FBA00FE5496 /* GeoLocationProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */; };
-		107BBA212F4F5FBA00FE5496 /* GeoLocationProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA222F4F5FBC00FE5496 /* IDLiveFaceCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */; };
-		107BBA232F4F5FBC00FE5496 /* IDLiveFaceCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA242F4F5FBD00FE5496 /* IDLiveFaceDetection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */; };
-		107BBA252F4F5FBD00FE5496 /* IDLiveFaceDetection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA262F4F5FBE00FE5496 /* IDLiveFaceIAD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */; };
-		107BBA272F4F5FBE00FE5496 /* IDLiveFaceIAD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA282F4F5FC200FE5496 /* JOSESwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA092F4F5F7C00FE5496 /* JOSESwift.xcframework */; };
 		107BBA292F4F5FC200FE5496 /* JOSESwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA092F4F5F7C00FE5496 /* JOSESwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA2A2F4F5FC300FE5496 /* JoseTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0A2F4F5F7C00FE5496 /* JoseTools.xcframework */; };
 		107BBA2B2F4F5FC300FE5496 /* JoseTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0A2F4F5F7C00FE5496 /* JoseTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA2C2F4F5FC400FE5496 /* LanguagePackProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */; };
-		107BBA2D2F4F5FC400FE5496 /* LanguagePackProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA2E2F4F5FC500FE5496 /* libsecp256k1.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0B2F4F5F7C00FE5496 /* libsecp256k1.xcframework */; };
 		107BBA2F2F4F5FC500FE5496 /* libsecp256k1.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0B2F4F5F7C00FE5496 /* libsecp256k1.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA302F4F5FC700FE5496 /* NeoInterfaces.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */; };
-		107BBA312F4F5FC700FE5496 /* NeoInterfaces.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA322F4F5FC900FE5496 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */; };
-		107BBA332F4F5FC900FE5496 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA342F4F5FCA00FE5496 /* secp256k1Wrapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0C2F4F5F7C00FE5496 /* secp256k1Wrapper.xcframework */; };
 		107BBA352F4F5FCA00FE5496 /* secp256k1Wrapper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0C2F4F5F7C00FE5496 /* secp256k1Wrapper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA472F4F60FE00FE5496 /* AnyCoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA372F4F60EC00FE5496 /* AnyCoder.xcframework */; };
@@ -133,62 +489,30 @@
 		107BBA4C2F4F610100FE5496 /* DIDSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA392F4F60EC00FE5496 /* DIDSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA4D2F4F610300FE5496 /* PingOneWallet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA3A2F4F60EC00FE5496 /* PingOneWallet.xcframework */; };
 		107BBA4E2F4F610300FE5496 /* PingOneWallet.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA3A2F4F60EC00FE5496 /* PingOneWallet.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA4F2F4F610900FE5496 /* BlinkID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */; };
-		107BBA502F4F610900FE5496 /* BlinkID.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA512F4F610A00FE5496 /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA082F4F5F7C00FE5496 /* CryptoTools.xcframework */; };
 		107BBA522F4F610A00FE5496 /* CryptoTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA082F4F5F7C00FE5496 /* CryptoTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA532F4F610B00FE5496 /* GeoLocationProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */; };
-		107BBA542F4F610B00FE5496 /* GeoLocationProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA552F4F610C00FE5496 /* IDLiveFaceCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */; };
-		107BBA562F4F610C00FE5496 /* IDLiveFaceCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA572F4F610D00FE5496 /* IDLiveFaceDetection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */; };
-		107BBA582F4F610D00FE5496 /* IDLiveFaceDetection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA592F4F610E00FE5496 /* IDLiveFaceIAD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */; };
-		107BBA5A2F4F610E00FE5496 /* IDLiveFaceIAD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA5B2F4F610F00FE5496 /* JOSESwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA092F4F5F7C00FE5496 /* JOSESwift.xcframework */; };
 		107BBA5C2F4F610F00FE5496 /* JOSESwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA092F4F5F7C00FE5496 /* JOSESwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA5D2F4F611000FE5496 /* JoseTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0A2F4F5F7C00FE5496 /* JoseTools.xcframework */; };
 		107BBA5E2F4F611000FE5496 /* JoseTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0A2F4F5F7C00FE5496 /* JoseTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA5F2F4F611100FE5496 /* LanguagePackProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */; };
-		107BBA602F4F611100FE5496 /* LanguagePackProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA612F4F611200FE5496 /* libsecp256k1.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0B2F4F5F7C00FE5496 /* libsecp256k1.xcframework */; };
 		107BBA622F4F611200FE5496 /* libsecp256k1.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0B2F4F5F7C00FE5496 /* libsecp256k1.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA632F4F611300FE5496 /* NeoInterfaces.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */; };
-		107BBA642F4F611300FE5496 /* NeoInterfaces.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA652F4F611400FE5496 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */; };
-		107BBA662F4F611400FE5496 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA672F4F611500FE5496 /* secp256k1Wrapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0C2F4F5F7C00FE5496 /* secp256k1Wrapper.xcframework */; };
 		107BBA682F4F611500FE5496 /* secp256k1Wrapper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0C2F4F5F7C00FE5496 /* secp256k1Wrapper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA692F4F612000FE5496 /* AnyCoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA372F4F60EC00FE5496 /* AnyCoder.xcframework */; };
 		107BBA6A2F4F612000FE5496 /* AnyCoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA372F4F60EC00FE5496 /* AnyCoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA6B2F4F612100FE5496 /* BlinkID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */; };
-		107BBA6C2F4F612100FE5496 /* BlinkID.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA6D2F4F612200FE5496 /* CommunicationManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA382F4F60EC00FE5496 /* CommunicationManager.xcframework */; };
 		107BBA6E2F4F612200FE5496 /* CommunicationManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA382F4F60EC00FE5496 /* CommunicationManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA6F2F4F612300FE5496 /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA082F4F5F7C00FE5496 /* CryptoTools.xcframework */; };
 		107BBA702F4F612300FE5496 /* CryptoTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA082F4F5F7C00FE5496 /* CryptoTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA712F4F612400FE5496 /* DIDSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA392F4F60EC00FE5496 /* DIDSDK.xcframework */; };
 		107BBA722F4F612400FE5496 /* DIDSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA392F4F60EC00FE5496 /* DIDSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA732F4F612600FE5496 /* GeoLocationProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */; };
-		107BBA742F4F612600FE5496 /* GeoLocationProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA752F4F612700FE5496 /* IDLiveFaceCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */; };
-		107BBA762F4F612700FE5496 /* IDLiveFaceCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA772F4F612800FE5496 /* IDLiveFaceDetection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */; };
-		107BBA782F4F612800FE5496 /* IDLiveFaceDetection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA792F4F612900FE5496 /* IDLiveFaceIAD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */; };
-		107BBA7A2F4F612900FE5496 /* IDLiveFaceIAD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA7B2F4F612A00FE5496 /* JOSESwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA092F4F5F7C00FE5496 /* JOSESwift.xcframework */; };
 		107BBA7C2F4F612A00FE5496 /* JOSESwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA092F4F5F7C00FE5496 /* JOSESwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA7D2F4F612B00FE5496 /* JoseTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0A2F4F5F7C00FE5496 /* JoseTools.xcframework */; };
 		107BBA7E2F4F612B00FE5496 /* JoseTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0A2F4F5F7C00FE5496 /* JoseTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA7F2F4F612E00FE5496 /* LanguagePackProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */; };
-		107BBA802F4F612E00FE5496 /* LanguagePackProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA812F4F612F00FE5496 /* NeoInterfaces.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */; };
-		107BBA822F4F612F00FE5496 /* NeoInterfaces.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA832F4F613000FE5496 /* libsecp256k1.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0B2F4F5F7C00FE5496 /* libsecp256k1.xcframework */; };
 		107BBA842F4F613000FE5496 /* libsecp256k1.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0B2F4F5F7C00FE5496 /* libsecp256k1.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		107BBA852F4F613100FE5496 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */; };
-		107BBA862F4F613100FE5496 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA872F4F613200FE5496 /* PingOneWallet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA3A2F4F60EC00FE5496 /* PingOneWallet.xcframework */; };
 		107BBA882F4F613200FE5496 /* PingOneWallet.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA3A2F4F60EC00FE5496 /* PingOneWallet.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107BBA892F4F613300FE5496 /* secp256k1Wrapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BBA0C2F4F5F7C00FE5496 /* secp256k1Wrapper.xcframework */; };
@@ -256,6 +580,70 @@
 		10CD05DE2E4E41EF00683E42 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10222F152D35879D00295B35 /* Date.swift */; };
 		10CD05E42E4E66DE00683E42 /* WalletAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD05E32E4E66D300683E42 /* WalletAppViewModel.swift */; };
 		10D29E862DD511B900F1C4CA /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EEFF322D0CB41C00B89DF7 /* LogoView.swift */; };
+		10E2DEB82FFD677600FDDBE3 /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E2DEB72FFD677600FDDBE3 /* QRScannerViewModel.swift */; };
+		10E2DEB92FFD677600FDDBE3 /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E2DEB72FFD677600FDDBE3 /* QRScannerViewModel.swift */; };
+		10E2DEBA2FFD677600FDDBE3 /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E2DEB72FFD677600FDDBE3 /* QRScannerViewModel.swift */; };
+		10E2DEBB2FFD93F200FDDBE3 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10222F0C2D35819B00295B35 /* QRScanner.swift */; };
+		10E2DEBC2FFD97E600FDDBE3 /* BlinkID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */; };
+		10E2DEBD2FFD97E600FDDBE3 /* BlinkID.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEBE2FFD97E700FDDBE3 /* BlinkIDUX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */; };
+		10E2DEBF2FFD97E700FDDBE3 /* BlinkIDUX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEC02FFD97E900FDDBE3 /* GeoLocationProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */; };
+		10E2DEC12FFD97E900FDDBE3 /* GeoLocationProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEC22FFD97EB00FDDBE3 /* IdCaptureProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */; };
+		10E2DEC32FFD97EB00FDDBE3 /* IdCaptureProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEC42FFD97EC00FDDBE3 /* IDLiveFaceCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */; };
+		10E2DEC52FFD97EC00FDDBE3 /* IDLiveFaceCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEC62FFD97ED00FDDBE3 /* IDLiveFaceDetection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */; };
+		10E2DEC72FFD97ED00FDDBE3 /* IDLiveFaceDetection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEC82FFD97EE00FDDBE3 /* IDLiveFaceIAD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */; };
+		10E2DEC92FFD97EE00FDDBE3 /* IDLiveFaceIAD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DECA2FFD97F100FDDBE3 /* NeoInterfaces.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */; };
+		10E2DECB2FFD97F100FDDBE3 /* NeoInterfaces.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DECC2FFD97F300FDDBE3 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */; };
+		10E2DECD2FFD97F300FDDBE3 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DECE2FFD97F500FDDBE3 /* SelfieCaptureProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */; };
+		10E2DECF2FFD97F500FDDBE3 /* SelfieCaptureProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DED02FFD97FC00FDDBE3 /* BlinkID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */; };
+		10E2DED12FFD97FC00FDDBE3 /* BlinkID.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DED22FFD97FD00FDDBE3 /* BlinkIDUX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */; };
+		10E2DED32FFD97FD00FDDBE3 /* BlinkIDUX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DED42FFD97FF00FDDBE3 /* GeoLocationProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */; };
+		10E2DED52FFD97FF00FDDBE3 /* GeoLocationProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DED62FFD980000FDDBE3 /* IdCaptureProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */; };
+		10E2DED72FFD980000FDDBE3 /* IdCaptureProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DED82FFD980100FDDBE3 /* IDLiveFaceCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */; };
+		10E2DED92FFD980100FDDBE3 /* IDLiveFaceCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEDA2FFD980200FDDBE3 /* IDLiveFaceDetection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */; };
+		10E2DEDB2FFD980200FDDBE3 /* IDLiveFaceDetection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEDC2FFD980300FDDBE3 /* IDLiveFaceIAD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */; };
+		10E2DEDD2FFD980300FDDBE3 /* IDLiveFaceIAD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEDE2FFD980600FDDBE3 /* NeoInterfaces.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */; };
+		10E2DEDF2FFD980600FDDBE3 /* NeoInterfaces.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEE02FFD980800FDDBE3 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */; };
+		10E2DEE12FFD980800FDDBE3 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEE22FFD980900FDDBE3 /* SelfieCaptureProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */; };
+		10E2DEE32FFD980900FDDBE3 /* SelfieCaptureProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEE42FFD981000FDDBE3 /* BlinkID.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */; };
+		10E2DEE52FFD981000FDDBE3 /* BlinkID.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEE62FFD981100FDDBE3 /* BlinkIDUX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */; };
+		10E2DEE72FFD981100FDDBE3 /* BlinkIDUX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEE82FFD981300FDDBE3 /* GeoLocationProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */; };
+		10E2DEE92FFD981300FDDBE3 /* GeoLocationProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEEA2FFD981400FDDBE3 /* IdCaptureProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */; };
+		10E2DEEB2FFD981400FDDBE3 /* IdCaptureProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEEC2FFD981500FDDBE3 /* IDLiveFaceCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */; };
+		10E2DEED2FFD981500FDDBE3 /* IDLiveFaceCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEEE2FFD981600FDDBE3 /* IDLiveFaceDetection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */; };
+		10E2DEEF2FFD981600FDDBE3 /* IDLiveFaceDetection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEF02FFD981700FDDBE3 /* IDLiveFaceIAD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */; };
+		10E2DEF12FFD981700FDDBE3 /* IDLiveFaceIAD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEF22FFD981900FDDBE3 /* NeoInterfaces.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */; };
+		10E2DEF32FFD981900FDDBE3 /* NeoInterfaces.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEF42FFD981A00FDDBE3 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */; };
+		10E2DEF52FFD981A00FDDBE3 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10E2DEF62FFD981B00FDDBE3 /* SelfieCaptureProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */; };
+		10E2DEF72FFD981B00FDDBE3 /* SelfieCaptureProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		10EC3AC92DF096FD0012CD0E /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC3AC82DF096FA0012CD0E /* VersionView.swift */; };
 		10EEFF432D0CB41C00B89DF7 /* DevicePairingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EEFF162D0CB41C00B89DF7 /* DevicePairingClient.swift */; };
 		10EEFF452D0CB41C00B89DF7 /* OpenBankingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EEFF182D0CB41C00B89DF7 /* OpenBankingClient.swift */; };
@@ -307,18 +695,20 @@
 			dstSubfolderSpec = 10;
 			files = (
 				107BBA682F4F611500FE5496 /* secp256k1Wrapper.xcframework in Embed Frameworks */,
-				107BBA5A2F4F610E00FE5496 /* IDLiveFaceIAD.xcframework in Embed Frameworks */,
-				107BBA562F4F610C00FE5496 /* IDLiveFaceCamera.xcframework in Embed Frameworks */,
 				107BBA622F4F611200FE5496 /* libsecp256k1.xcframework in Embed Frameworks */,
-				107BBA602F4F611100FE5496 /* LanguagePackProvider.xcframework in Embed Frameworks */,
-				107BBA542F4F610B00FE5496 /* GeoLocationProvider.xcframework in Embed Frameworks */,
+				10E2DEC52FFD97EC00FDDBE3 /* IDLiveFaceCamera.xcframework in Embed Frameworks */,
 				107BBA522F4F610A00FE5496 /* CryptoTools.xcframework in Embed Frameworks */,
+				10E2DEBD2FFD97E600FDDBE3 /* BlinkID.xcframework in Embed Frameworks */,
 				107BBA5C2F4F610F00FE5496 /* JOSESwift.xcframework in Embed Frameworks */,
-				107BBA502F4F610900FE5496 /* BlinkID.xcframework in Embed Frameworks */,
-				107BBA642F4F611300FE5496 /* NeoInterfaces.xcframework in Embed Frameworks */,
-				107BBA662F4F611400FE5496 /* PingOneVerify.xcframework in Embed Frameworks */,
+				10E2DEC92FFD97EE00FDDBE3 /* IDLiveFaceIAD.xcframework in Embed Frameworks */,
+				10E2DEC12FFD97E900FDDBE3 /* GeoLocationProvider.xcframework in Embed Frameworks */,
+				10E2DEC72FFD97ED00FDDBE3 /* IDLiveFaceDetection.xcframework in Embed Frameworks */,
+				10E2DEBF2FFD97E700FDDBE3 /* BlinkIDUX.xcframework in Embed Frameworks */,
 				107BBA5E2F4F611000FE5496 /* JoseTools.xcframework in Embed Frameworks */,
-				107BBA582F4F610D00FE5496 /* IDLiveFaceDetection.xcframework in Embed Frameworks */,
+				10E2DECF2FFD97F500FDDBE3 /* SelfieCaptureProvider.xcframework in Embed Frameworks */,
+				10E2DECD2FFD97F300FDDBE3 /* PingOneVerify.xcframework in Embed Frameworks */,
+				10E2DEC32FFD97EB00FDDBE3 /* IdCaptureProvider.xcframework in Embed Frameworks */,
+				10E2DECB2FFD97F100FDDBE3 /* NeoInterfaces.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,23 +729,25 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				107BBA7A2F4F612900FE5496 /* IDLiveFaceIAD.xcframework in Embed Frameworks */,
+				10E2DEED2FFD981500FDDBE3 /* IDLiveFaceCamera.xcframework in Embed Frameworks */,
 				107BBA7E2F4F612B00FE5496 /* JoseTools.xcframework in Embed Frameworks */,
-				107BBA802F4F612E00FE5496 /* LanguagePackProvider.xcframework in Embed Frameworks */,
-				107BBA762F4F612700FE5496 /* IDLiveFaceCamera.xcframework in Embed Frameworks */,
-				107BBA782F4F612800FE5496 /* IDLiveFaceDetection.xcframework in Embed Frameworks */,
 				107BBA702F4F612300FE5496 /* CryptoTools.xcframework in Embed Frameworks */,
+				10E2DEE72FFD981100FDDBE3 /* BlinkIDUX.xcframework in Embed Frameworks */,
+				10E2DEEB2FFD981400FDDBE3 /* IdCaptureProvider.xcframework in Embed Frameworks */,
 				107BBA8A2F4F613300FE5496 /* secp256k1Wrapper.xcframework in Embed Frameworks */,
 				107BBA722F4F612400FE5496 /* DIDSDK.xcframework in Embed Frameworks */,
 				107BBA6A2F4F612000FE5496 /* AnyCoder.xcframework in Embed Frameworks */,
+				10E2DEF72FFD981B00FDDBE3 /* SelfieCaptureProvider.xcframework in Embed Frameworks */,
+				10E2DEE52FFD981000FDDBE3 /* BlinkID.xcframework in Embed Frameworks */,
+				10E2DEF52FFD981A00FDDBE3 /* PingOneVerify.xcframework in Embed Frameworks */,
+				10E2DEEF2FFD981600FDDBE3 /* IDLiveFaceDetection.xcframework in Embed Frameworks */,
+				10E2DEF12FFD981700FDDBE3 /* IDLiveFaceIAD.xcframework in Embed Frameworks */,
+				10E2DEF32FFD981900FDDBE3 /* NeoInterfaces.xcframework in Embed Frameworks */,
 				107BBA842F4F613000FE5496 /* libsecp256k1.xcframework in Embed Frameworks */,
 				107BBA882F4F613200FE5496 /* PingOneWallet.xcframework in Embed Frameworks */,
+				10E2DEE92FFD981300FDDBE3 /* GeoLocationProvider.xcframework in Embed Frameworks */,
 				107BBA7C2F4F612A00FE5496 /* JOSESwift.xcframework in Embed Frameworks */,
-				107BBA742F4F612600FE5496 /* GeoLocationProvider.xcframework in Embed Frameworks */,
 				107BBA6E2F4F612200FE5496 /* CommunicationManager.xcframework in Embed Frameworks */,
-				107BBA862F4F613100FE5496 /* PingOneVerify.xcframework in Embed Frameworks */,
-				107BBA6C2F4F612100FE5496 /* BlinkID.xcframework in Embed Frameworks */,
-				107BBA822F4F612F00FE5496 /* NeoInterfaces.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,21 +758,23 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				10E2DED92FFD980100FDDBE3 /* IDLiveFaceCamera.xcframework in Embed Frameworks */,
 				107BBA292F4F5FC200FE5496 /* JOSESwift.xcframework in Embed Frameworks */,
 				107BBA4A2F4F60FF00FE5496 /* CommunicationManager.xcframework in Embed Frameworks */,
-				107BBA232F4F5FBC00FE5496 /* IDLiveFaceCamera.xcframework in Embed Frameworks */,
+				10E2DED32FFD97FD00FDDBE3 /* BlinkIDUX.xcframework in Embed Frameworks */,
+				10E2DED72FFD980000FDDBE3 /* IdCaptureProvider.xcframework in Embed Frameworks */,
 				107BBA2B2F4F5FC300FE5496 /* JoseTools.xcframework in Embed Frameworks */,
-				107BBA1D2F4F5FB600FE5496 /* BlinkID.xcframework in Embed Frameworks */,
-				107BBA212F4F5FBA00FE5496 /* GeoLocationProvider.xcframework in Embed Frameworks */,
-				107BBA332F4F5FC900FE5496 /* PingOneVerify.xcframework in Embed Frameworks */,
 				107BBA4E2F4F610300FE5496 /* PingOneWallet.xcframework in Embed Frameworks */,
 				107BBA352F4F5FCA00FE5496 /* secp256k1Wrapper.xcframework in Embed Frameworks */,
-				107BBA312F4F5FC700FE5496 /* NeoInterfaces.xcframework in Embed Frameworks */,
-				107BBA252F4F5FBD00FE5496 /* IDLiveFaceDetection.xcframework in Embed Frameworks */,
-				107BBA272F4F5FBE00FE5496 /* IDLiveFaceIAD.xcframework in Embed Frameworks */,
+				10E2DEE32FFD980900FDDBE3 /* SelfieCaptureProvider.xcframework in Embed Frameworks */,
+				10E2DED12FFD97FC00FDDBE3 /* BlinkID.xcframework in Embed Frameworks */,
+				10E2DEE12FFD980800FDDBE3 /* PingOneVerify.xcframework in Embed Frameworks */,
+				10E2DEDB2FFD980200FDDBE3 /* IDLiveFaceDetection.xcframework in Embed Frameworks */,
+				10E2DEDD2FFD980300FDDBE3 /* IDLiveFaceIAD.xcframework in Embed Frameworks */,
+				10E2DEDF2FFD980600FDDBE3 /* NeoInterfaces.xcframework in Embed Frameworks */,
 				107BBA482F4F60FE00FE5496 /* AnyCoder.xcframework in Embed Frameworks */,
 				107BBA4C2F4F610100FE5496 /* DIDSDK.xcframework in Embed Frameworks */,
-				107BBA2D2F4F5FC400FE5496 /* LanguagePackProvider.xcframework in Embed Frameworks */,
+				10E2DED52FFD97FF00FDDBE3 /* GeoLocationProvider.xcframework in Embed Frameworks */,
 				107BBA2F2F4F5FC500FE5496 /* libsecp256k1.xcframework in Embed Frameworks */,
 				107BBA1F2F4F5FB900FE5496 /* CryptoTools.xcframework in Embed Frameworks */,
 			);
@@ -420,6 +814,131 @@
 		102712D72C9383DA00492869 /* BXIndustryHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXIndustryHomeView.swift; sourceTree = "<group>"; };
 		1031476C2D5BD5D60049F8AD /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		1031476E2D5BDAC90049F8AD /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		10333DD92FFDA22F00F297D8 /* AppthemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppthemeHandler.swift; sourceTree = "<group>"; };
+		10333DDA2FFDA22F00F297D8 /* AttributedStringProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringProvider.swift; sourceTree = "<group>"; };
+		10333DDD2FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCountryCodePickerListener.swift; sourceTree = "<group>"; };
+		10333DDE2FFDA22F00F297D8 /* CustomCountryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCountryPickerViewController.swift; sourceTree = "<group>"; };
+		10333DDF2FFDA22F00F297D8 /* CustomCountryPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCountryPickerViewController.xib; sourceTree = "<group>"; };
+		10333DE02FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomCountryPickerViewController+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
+		10333DE12FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomCountryPickerViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		10333DE32FFDA22F00F297D8 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		10333DE42FFDA22F00F297D8 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		10333DE52FFDA22F00F297D8 /* ImageCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellContent.swift; sourceTree = "<group>"; };
+		10333DE72FFDA22F00F297D8 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		10333DE82FFDA22F00F297D8 /* LabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCell.xib; sourceTree = "<group>"; };
+		10333DE92FFDA22F00F297D8 /* LabelCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCellContent.swift; sourceTree = "<group>"; };
+		10333DEB2FFDA22F00F297D8 /* CustomMenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuItemCell.swift; sourceTree = "<group>"; };
+		10333DEE2FFDA22F00F297D8 /* CustomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenu.swift; sourceTree = "<group>"; };
+		10333DEF2FFDA22F00F297D8 /* CustomMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMenu.xib; sourceTree = "<group>"; };
+		10333DF02FFDA22F00F297D8 /* CustomMenuConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuConstants.swift; sourceTree = "<group>"; };
+		10333DF22FFDA22F00F297D8 /* CustomMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuButton.swift; sourceTree = "<group>"; };
+		10333DF42FFDA22F00F297D8 /* CustomPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPhoneView.swift; sourceTree = "<group>"; };
+		10333DF52FFDA22F00F297D8 /* CustomPhoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPhoneView.xib; sourceTree = "<group>"; };
+		10333DF72FFDA22F00F297D8 /* CustomToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
+		10333DF82FFDA22F00F297D8 /* CustomToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomToastView.xib; sourceTree = "<group>"; };
+		10333DFA2FFDA22F00F297D8 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		10333DFB2FFDA22F00F297D8 /* BlurLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurLoader.swift; sourceTree = "<group>"; };
+		10333DFC2FFDA22F00F297D8 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		10333DFD2FFDA22F00F297D8 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		10333DFE2FFDA22F00F297D8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		10333DFF2FFDA22F00F297D8 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		10333E002FFDA22F00F297D8 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		10333E012FFDA22F00F297D8 /* PingOneNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingOneNavController.swift; sourceTree = "<group>"; };
+		10333E022FFDA22F00F297D8 /* ProcessingColorHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingColorHolderView.swift; sourceTree = "<group>"; };
+		10333E032FFDA22F00F297D8 /* TintColorHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColorHolderView.swift; sourceTree = "<group>"; };
+		10333E042FFDA22F00F297D8 /* VerifyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyButton.swift; sourceTree = "<group>"; };
+		10333E062FFDA22F00F297D8 /* BaseViewController+navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+navigation.swift"; sourceTree = "<group>"; };
+		10333E082FFDA22F00F297D8 /* String+getHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+getHeight.swift"; sourceTree = "<group>"; };
+		10333E092FFDA22F00F297D8 /* String+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		10333E0A2FFDA22F00F297D8 /* String+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIImage.swift"; sourceTree = "<group>"; };
+		10333E0C2FFDA22F00F297D8 /* TimeInterval+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+format.swift"; sourceTree = "<group>"; };
+		10333E0E2FFDA22F00F297D8 /* UIAction+handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAction+handler.swift"; sourceTree = "<group>"; };
+		10333E102FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+preventRepeatedClicks.swift"; sourceTree = "<group>"; };
+		10333E122FFDA22F00F297D8 /* UIColor+loadColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+loadColor.swift"; sourceTree = "<group>"; };
+		10333E142FFDA22F00F297D8 /* UIImage+addGrandient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+addGrandient.swift"; sourceTree = "<group>"; };
+		10333E152FFDA22F00F297D8 /* UIImage+addImagePadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+addImagePadding.swift"; sourceTree = "<group>"; };
+		10333E162FFDA22F00F297D8 /* UIImage+loadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+loadImage.swift"; sourceTree = "<group>"; };
+		10333E172FFDA22F00F297D8 /* UIImage+resizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resizeImage.swift"; sourceTree = "<group>"; };
+		10333E182FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+tintWithGradientColor.swift"; sourceTree = "<group>"; };
+		10333E1A2FFDA22F00F297D8 /* UILabel+textWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+textWidth.swift"; sourceTree = "<group>"; };
+		10333E1C2FFDA22F00F297D8 /* UINavigationController+interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+interface.swift"; sourceTree = "<group>"; };
+		10333E1E2FFDA22F00F297D8 /* UITextField+addLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+addLeftView.swift"; sourceTree = "<group>"; };
+		10333E1F2FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+changeErrorBorder.swift"; sourceTree = "<group>"; };
+		10333E202FFDA22F00F297D8 /* UITextField+setPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setPadding.swift"; sourceTree = "<group>"; };
+		10333E222FFDA22F00F297D8 /* UIView+BlurLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+BlurLoader.swift"; sourceTree = "<group>"; };
+		10333E232FFDA22F00F297D8 /* UIView+fixInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fixInView.swift"; sourceTree = "<group>"; };
+		10333E252FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+requestCameraPermission.swift"; sourceTree = "<group>"; };
+		10333E282FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationPermissionRetryViewController.swift; sourceTree = "<group>"; };
+		10333E292FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeolocationPermissionRetryViewController.xib; sourceTree = "<group>"; };
+		10333E2A2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationPermissionViewController.swift; sourceTree = "<group>"; };
+		10333E2B2FFDA22F00F297D8 /* GeolocationPermissionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeolocationPermissionViewController.xib; sourceTree = "<group>"; };
+		10333E2D2FFDA22F00F297D8 /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		10333E2E2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = PingOneVerifyLocalizable.strings; sourceTree = "<group>"; };
+		10333E302FFDA22F00F297D8 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
+		10333E322FFDA22F00F297D8 /* PingOneNavController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PingOneNavController.xib; sourceTree = "<group>"; };
+		10333E342FFDA22F00F297D8 /* PingOneVerifyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingOneVerifyHelper.swift; sourceTree = "<group>"; };
+		10333E352FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift"; sourceTree = "<group>"; };
+		10333E372FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyLanguagePackProvider.swift; sourceTree = "<group>"; };
+		10333E3A2FFDA22F00F297D8 /* DocumentCaptureContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCaptureContract.swift; sourceTree = "<group>"; };
+		10333E3B2FFDA22F00F297D8 /* DocumentCapturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCapturePresenter.swift; sourceTree = "<group>"; };
+		10333E3D2FFDA22F00F297D8 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		10333E3E2FFDA22F00F297D8 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		10333E402FFDA22F00F297D8 /* QrScannerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerContract.swift; sourceTree = "<group>"; };
+		10333E412FFDA22F00F297D8 /* QrScannerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerListener.swift; sourceTree = "<group>"; };
+		10333E422FFDA22F00F297D8 /* QrScannerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerPresenter.swift; sourceTree = "<group>"; };
+		10333E432FFDA22F00F297D8 /* QrScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrScannerView.xib; sourceTree = "<group>"; };
+		10333E442FFDA22F00F297D8 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		10333E462FFDA22F00F297D8 /* RetryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryViewController.swift; sourceTree = "<group>"; };
+		10333E472FFDA22F00F297D8 /* RetryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RetryViewController.xib; sourceTree = "<group>"; };
+		10333E492FFDA22F00F297D8 /* SCFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCFace.swift; sourceTree = "<group>"; };
+		10333E4B2FFDA22F00F297D8 /* SCAVCaptureWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAVCaptureWrapper.swift; sourceTree = "<group>"; };
+		10333E4E2FFDA22F00F297D8 /* LivenessCheckError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivenessCheckError.swift; sourceTree = "<group>"; };
+		10333E4F2FFDA22F00F297D8 /* SelfieQAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieQAError.swift; sourceTree = "<group>"; };
+		10333E512FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+DistanceFromPoint.swift"; sourceTree = "<group>"; };
+		10333E522FFDA22F00F297D8 /* CGRect+CenteredRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+CenteredRect.swift"; sourceTree = "<group>"; };
+		10333E532FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNFaceLandmarks2D+GetAll.swift"; sourceTree = "<group>"; };
+		10333E552FFDA22F00F297D8 /* AtomicWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicWrapper.swift; sourceTree = "<group>"; };
+		10333E562FFDA22F00F297D8 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		10333E572FFDA22F00F297D8 /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		10333E582FFDA22F00F297D8 /* FaceLandmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceLandmark.swift; sourceTree = "<group>"; };
+		10333E592FFDA22F00F297D8 /* LandmarkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkType.swift; sourceTree = "<group>"; };
+		10333E5A2FFDA22F00F297D8 /* MedianLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianLine.swift; sourceTree = "<group>"; };
+		10333E5B2FFDA22F00F297D8 /* SelfieQAResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieQAResult.swift; sourceTree = "<group>"; };
+		10333E5D2FFDA22F00F297D8 /* CameraOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
+		10333E5E2FFDA22F00F297D8 /* CenterTextLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTextLayer.swift; sourceTree = "<group>"; };
+		10333E5F2FFDA22F00F297D8 /* OvalCameraOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalCameraOverlayView.swift; sourceTree = "<group>"; };
+		10333E602FFDA22F00F297D8 /* SelfieCaptureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfieCaptureView.xib; sourceTree = "<group>"; };
+		10333E612FFDA22F00F297D8 /* SelfiePreviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfiePreviewView.xib; sourceTree = "<group>"; };
+		10333E622FFDA22F00F297D8 /* SelfiePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiePreviewViewController.swift; sourceTree = "<group>"; };
+		10333E652FFDA22F00F297D8 /* ImageTransformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransformations.swift; sourceTree = "<group>"; };
+		10333E662FFDA22F00F297D8 /* SampleBufferUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBufferUtils.swift; sourceTree = "<group>"; };
+		10333E682FFDA22F00F297D8 /* CountryCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodes.swift; sourceTree = "<group>"; };
+		10333E6A2FFDA22F00F297D8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		10333E6B2FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerWithTextField.swift; sourceTree = "<group>"; };
+		10333E6D2FFDA22F00F297D8 /* EmailCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCaptureViewController.swift; sourceTree = "<group>"; };
+		10333E6E2FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmailCaptureViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		10333E702FFDA22F00F297D8 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		10333E712FFDA22F00F297D8 /* OtpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtpViewController.xib; sourceTree = "<group>"; };
+		10333E722FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OtpViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		10333E742FFDA22F00F297D8 /* PhoneCaptureUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCaptureUtils.swift; sourceTree = "<group>"; };
+		10333E752FFDA22F00F297D8 /* PhoneCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCaptureViewController.swift; sourceTree = "<group>"; };
+		10333E762FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneCaptureViewController+CustomCountryCodePickerListener.swift"; sourceTree = "<group>"; };
+		10333E772FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneCaptureViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		10333E792FFDA22F00F297D8 /* DataCaptureConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCaptureConstants.swift; sourceTree = "<group>"; };
+		10333E7A2FFDA22F00F297D8 /* DataCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCaptureViewController.swift; sourceTree = "<group>"; };
+		10333E7B2FFDA22F00F297D8 /* DataCaptureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCaptureViewController.xib; sourceTree = "<group>"; };
+		10333E7D2FFDA22F00F297D8 /* DocumentCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCaptureViewController.swift; sourceTree = "<group>"; };
+		10333E7E2FFDA22F00F297D8 /* DocumentCaptureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCaptureViewController.xib; sourceTree = "<group>"; };
+		10333E802FFDA22F00F297D8 /* DocumentSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSelectionCell.swift; sourceTree = "<group>"; };
+		10333E812FFDA22F00F297D8 /* DocumentSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentSelectionCell.xib; sourceTree = "<group>"; };
+		10333E822FFDA22F00F297D8 /* DocumentSelectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentSelectionVC.xib; sourceTree = "<group>"; };
+		10333E832FFDA22F00F297D8 /* DocumentSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSelectionViewController.swift; sourceTree = "<group>"; };
+		10333E852FFDA22F00F297D8 /* ProcessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingViewController.swift; sourceTree = "<group>"; };
+		10333E862FFDA22F00F297D8 /* ProcessingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessingViewController.xib; sourceTree = "<group>"; };
+		10333E892FFDA22F00F297D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10333E8A2FFDA22F00F297D8 /* VerifyUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyUI.h; sourceTree = "<group>"; };
+		10333E8B2FFDA22F00F297D8 /* VerifyUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VerifyUI.docc; sourceTree = "<group>"; };
+		10333E8C2FFDA22F00F297D8 /* VerifyUIExports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyUIExports.swift; sourceTree = "<group>"; };
 		103501E12DD6323D005F2E74 /* UnauthenticatedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthenticatedContentView.swift; sourceTree = "<group>"; };
 		103501E32DD78E30005F2E74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		103501E62DD798DA005F2E74 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -465,14 +984,6 @@
 		1072D7D42E4B81C60086C8BA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1076D2432A5F52EB0073ADD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1076D2472A5F548E0073ADD2 /* BXHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BXHealth.entitlements; sourceTree = "<group>"; };
-		107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlinkID.xcframework; sourceTree = "<group>"; };
-		107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GeoLocationProvider.xcframework; sourceTree = "<group>"; };
-		107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:CQQF4ZK23A:ID R&D Inc."; lastKnownFileType = wrapper.xcframework; path = IDLiveFaceCamera.xcframework; sourceTree = "<group>"; };
-		107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:CQQF4ZK23A:ID R&D Inc."; lastKnownFileType = wrapper.xcframework; path = IDLiveFaceDetection.xcframework; sourceTree = "<group>"; };
-		107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:CQQF4ZK23A:ID R&D Inc."; lastKnownFileType = wrapper.xcframework; path = IDLiveFaceIAD.xcframework; sourceTree = "<group>"; };
-		107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LanguagePackProvider.xcframework; sourceTree = "<group>"; };
-		107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NeoInterfaces.xcframework; sourceTree = "<group>"; };
-		107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PingOneVerify.xcframework; sourceTree = "<group>"; };
 		107BBA082F4F5F7C00FE5496 /* CryptoTools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CryptoTools.xcframework; sourceTree = "<group>"; };
 		107BBA092F4F5F7C00FE5496 /* JOSESwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JOSESwift.xcframework; sourceTree = "<group>"; };
 		107BBA0A2F4F5F7C00FE5496 /* JoseTools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JoseTools.xcframework; sourceTree = "<group>"; };
@@ -512,6 +1023,17 @@
 		10CD05DC2E4E2ABA00683E42 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		10CD05DF2E4E54B300683E42 /* BXWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BXWallet.entitlements; sourceTree = "<group>"; };
 		10CD05E32E4E66D300683E42 /* WalletAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppViewModel.swift; sourceTree = "<group>"; };
+		10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlinkID.xcframework; sourceTree = "<group>"; };
+		10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlinkIDUX.xcframework; sourceTree = "<group>"; };
+		10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GeoLocationProvider.xcframework; sourceTree = "<group>"; };
+		10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdCaptureProvider.xcframework; sourceTree = "<group>"; };
+		10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IDLiveFaceCamera.xcframework; sourceTree = "<group>"; };
+		10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IDLiveFaceDetection.xcframework; sourceTree = "<group>"; };
+		10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IDLiveFaceIAD.xcframework; sourceTree = "<group>"; };
+		10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NeoInterfaces.xcframework; sourceTree = "<group>"; };
+		10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PingOneVerify.xcframework; sourceTree = "<group>"; };
+		10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SelfieCaptureProvider.xcframework; sourceTree = "<group>"; };
+		10E2DEB72FFD677600FDDBE3 /* QRScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewModel.swift; sourceTree = "<group>"; };
 		10EC3AC82DF096FA0012CD0E /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
 		10EEFF162D0CB41C00B89DF7 /* DevicePairingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePairingClient.swift; sourceTree = "<group>"; };
 		10EEFF182D0CB41C00B89DF7 /* OpenBankingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankingClient.swift; sourceTree = "<group>"; };
@@ -561,18 +1083,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E2DEC82FFD97EE00FDDBE3 /* IDLiveFaceIAD.xcframework in Frameworks */,
 				107BBA512F4F610A00FE5496 /* CryptoTools.xcframework in Frameworks */,
-				107BBA572F4F610D00FE5496 /* IDLiveFaceDetection.xcframework in Frameworks */,
-				107BBA532F4F610B00FE5496 /* GeoLocationProvider.xcframework in Frameworks */,
-				107BBA4F2F4F610900FE5496 /* BlinkID.xcframework in Frameworks */,
-				107BBA652F4F611400FE5496 /* PingOneVerify.xcframework in Frameworks */,
-				107BBA632F4F611300FE5496 /* NeoInterfaces.xcframework in Frameworks */,
-				107BBA552F4F610C00FE5496 /* IDLiveFaceCamera.xcframework in Frameworks */,
-				107BBA592F4F610E00FE5496 /* IDLiveFaceIAD.xcframework in Frameworks */,
+				10E2DECA2FFD97F100FDDBE3 /* NeoInterfaces.xcframework in Frameworks */,
 				107BBA672F4F611500FE5496 /* secp256k1Wrapper.xcframework in Frameworks */,
+				10E2DEC42FFD97EC00FDDBE3 /* IDLiveFaceCamera.xcframework in Frameworks */,
+				10E2DECE2FFD97F500FDDBE3 /* SelfieCaptureProvider.xcframework in Frameworks */,
+				10E2DEC62FFD97ED00FDDBE3 /* IDLiveFaceDetection.xcframework in Frameworks */,
 				107BBA5B2F4F610F00FE5496 /* JOSESwift.xcframework in Frameworks */,
-				107BBA5F2F4F611100FE5496 /* LanguagePackProvider.xcframework in Frameworks */,
+				10E2DEC02FFD97E900FDDBE3 /* GeoLocationProvider.xcframework in Frameworks */,
 				107BBA612F4F611200FE5496 /* libsecp256k1.xcframework in Frameworks */,
+				10E2DECC2FFD97F300FDDBE3 /* PingOneVerify.xcframework in Frameworks */,
+				10E2DEC22FFD97EB00FDDBE3 /* IdCaptureProvider.xcframework in Frameworks */,
+				10E2DEBE2FFD97E700FDDBE3 /* BlinkIDUX.xcframework in Frameworks */,
+				10E2DEBC2FFD97E600FDDBE3 /* BlinkID.xcframework in Frameworks */,
 				103147732D5BDC790049F8AD /* PingOneSDK in Frameworks */,
 				104DD86B2D78C76800C25A26 /* FirebaseAnalytics in Frameworks */,
 				107BBA5D2F4F611000FE5496 /* JoseTools.xcframework in Frameworks */,
@@ -586,23 +1110,25 @@
 			files = (
 				107BBA7D2F4F612B00FE5496 /* JoseTools.xcframework in Frameworks */,
 				107BBA832F4F613000FE5496 /* libsecp256k1.xcframework in Frameworks */,
-				107BBA792F4F612900FE5496 /* IDLiveFaceIAD.xcframework in Frameworks */,
-				107BBA852F4F613100FE5496 /* PingOneVerify.xcframework in Frameworks */,
-				107BBA6B2F4F612100FE5496 /* BlinkID.xcframework in Frameworks */,
-				107BBA772F4F612800FE5496 /* IDLiveFaceDetection.xcframework in Frameworks */,
+				10E2DEF22FFD981900FDDBE3 /* NeoInterfaces.xcframework in Frameworks */,
 				107BBA6D2F4F612200FE5496 /* CommunicationManager.xcframework in Frameworks */,
 				107BBA892F4F613300FE5496 /* secp256k1Wrapper.xcframework in Frameworks */,
-				107BBA812F4F612F00FE5496 /* NeoInterfaces.xcframework in Frameworks */,
 				107BBA6F2F4F612300FE5496 /* CryptoTools.xcframework in Frameworks */,
-				107BBA752F4F612700FE5496 /* IDLiveFaceCamera.xcframework in Frameworks */,
+				10E2DEE62FFD981100FDDBE3 /* BlinkIDUX.xcframework in Frameworks */,
 				109465D52E4BBF10008B0151 /* FirebaseAnalytics in Frameworks */,
+				10E2DEE42FFD981000FDDBE3 /* BlinkID.xcframework in Frameworks */,
 				109465D22E4BBDDD008B0151 /* SVGKit in Frameworks */,
+				10E2DEEE2FFD981600FDDBE3 /* IDLiveFaceDetection.xcframework in Frameworks */,
+				10E2DEF02FFD981700FDDBE3 /* IDLiveFaceIAD.xcframework in Frameworks */,
+				10E2DEEC2FFD981500FDDBE3 /* IDLiveFaceCamera.xcframework in Frameworks */,
+				10E2DEEA2FFD981400FDDBE3 /* IdCaptureProvider.xcframework in Frameworks */,
+				10E2DEF62FFD981B00FDDBE3 /* SelfieCaptureProvider.xcframework in Frameworks */,
+				10E2DEE82FFD981300FDDBE3 /* GeoLocationProvider.xcframework in Frameworks */,
 				107BBA692F4F612000FE5496 /* AnyCoder.xcframework in Frameworks */,
 				107BBA7B2F4F612A00FE5496 /* JOSESwift.xcframework in Frameworks */,
+				10E2DEF42FFD981A00FDDBE3 /* PingOneVerify.xcframework in Frameworks */,
 				107BBA872F4F613200FE5496 /* PingOneWallet.xcframework in Frameworks */,
-				107BBA7F2F4F612E00FE5496 /* LanguagePackProvider.xcframework in Frameworks */,
 				107BBA712F4F612400FE5496 /* DIDSDK.xcframework in Frameworks */,
-				107BBA732F4F612600FE5496 /* GeoLocationProvider.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,29 +1136,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				107BBA2C2F4F5FC400FE5496 /* LanguagePackProvider.xcframework in Frameworks */,
-				107BBA1C2F4F5FB600FE5496 /* BlinkID.xcframework in Frameworks */,
-				107BBA322F4F5FC900FE5496 /* PingOneVerify.xcframework in Frameworks */,
+				10E2DEDE2FFD980600FDDBE3 /* NeoInterfaces.xcframework in Frameworks */,
 				107BBA492F4F60FF00FE5496 /* CommunicationManager.xcframework in Frameworks */,
-				107BBA262F4F5FBE00FE5496 /* IDLiveFaceIAD.xcframework in Frameworks */,
-				107BBA302F4F5FC700FE5496 /* NeoInterfaces.xcframework in Frameworks */,
+				10E2DEE02FFD980800FDDBE3 /* PingOneVerify.xcframework in Frameworks */,
 				107BBA1E2F4F5FB900FE5496 /* CryptoTools.xcframework in Frameworks */,
+				10E2DED82FFD980100FDDBE3 /* IDLiveFaceCamera.xcframework in Frameworks */,
 				107BBA4B2F4F610100FE5496 /* DIDSDK.xcframework in Frameworks */,
+				10E2DEDC2FFD980300FDDBE3 /* IDLiveFaceIAD.xcframework in Frameworks */,
 				107BBA2E2F4F5FC500FE5496 /* libsecp256k1.xcframework in Frameworks */,
 				10222F132D35876300295B35 /* SVGKit in Frameworks */,
+				10E2DED02FFD97FC00FDDBE3 /* BlinkID.xcframework in Frameworks */,
 				107BBA2A2F4F5FC300FE5496 /* JoseTools.xcframework in Frameworks */,
+				10E2DEE22FFD980900FDDBE3 /* SelfieCaptureProvider.xcframework in Frameworks */,
 				105979682D078953009A7610 /* SwiftyJSON in Frameworks */,
 				107BBA282F4F5FC200FE5496 /* JOSESwift.xcframework in Frameworks */,
-				107BBA222F4F5FBC00FE5496 /* IDLiveFaceCamera.xcframework in Frameworks */,
 				107BBA472F4F60FE00FE5496 /* AnyCoder.xcframework in Frameworks */,
-				107BBA202F4F5FBA00FE5496 /* GeoLocationProvider.xcframework in Frameworks */,
+				10E2DED22FFD97FD00FDDBE3 /* BlinkIDUX.xcframework in Frameworks */,
 				104DD8702D78D99F00C25A26 /* FirebaseAnalytics in Frameworks */,
 				108733CB2CCC48B00071630C /* PingOneSDK in Frameworks */,
+				10E2DED42FFD97FF00FDDBE3 /* GeoLocationProvider.xcframework in Frameworks */,
+				10E2DEDA2FFD980200FDDBE3 /* IDLiveFaceDetection.xcframework in Frameworks */,
 				108733C92CCC48A80071630C /* AppAuth in Frameworks */,
+				10E2DED62FFD980000FDDBE3 /* IdCaptureProvider.xcframework in Frameworks */,
 				107BBA342F4F5FCA00FE5496 /* secp256k1Wrapper.xcframework in Frameworks */,
 				1059796F2D08ABD6009A7610 /* PingOneSignals in Frameworks */,
 				107BBA4D2F4F610300FE5496 /* PingOneWallet.xcframework in Frameworks */,
-				107BBA242F4F5FBD00FE5496 /* IDLiveFaceDetection.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +1290,578 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		10333DDB2FFDA22F00F297D8 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				10333DD92FFDA22F00F297D8 /* AppthemeHandler.swift */,
+				10333DDA2FFDA22F00F297D8 /* AttributedStringProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		10333DDC2FFDA22F00F297D8 /* AppTheme */ = {
+			isa = PBXGroup;
+			children = (
+				10333DDB2FFDA22F00F297D8 /* Providers */,
+			);
+			path = AppTheme;
+			sourceTree = "<group>";
+		};
+		10333DE22FFDA22F00F297D8 /* CustomCountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				10333DDD2FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift */,
+				10333DDE2FFDA22F00F297D8 /* CustomCountryPickerViewController.swift */,
+				10333DDF2FFDA22F00F297D8 /* CustomCountryPickerViewController.xib */,
+				10333DE02FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift */,
+				10333DE12FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift */,
+			);
+			path = CustomCountryPicker;
+			sourceTree = "<group>";
+		};
+		10333DE62FFDA22F00F297D8 /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				10333DE32FFDA22F00F297D8 /* ImageCell.swift */,
+				10333DE42FFDA22F00F297D8 /* ImageCell.xib */,
+				10333DE52FFDA22F00F297D8 /* ImageCellContent.swift */,
+			);
+			path = ImageCell;
+			sourceTree = "<group>";
+		};
+		10333DEA2FFDA22F00F297D8 /* LabelCell */ = {
+			isa = PBXGroup;
+			children = (
+				10333DE72FFDA22F00F297D8 /* LabelCell.swift */,
+				10333DE82FFDA22F00F297D8 /* LabelCell.xib */,
+				10333DE92FFDA22F00F297D8 /* LabelCellContent.swift */,
+			);
+			path = LabelCell;
+			sourceTree = "<group>";
+		};
+		10333DEC2FFDA22F00F297D8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				10333DEB2FFDA22F00F297D8 /* CustomMenuItemCell.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		10333DED2FFDA22F00F297D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				10333DE62FFDA22F00F297D8 /* ImageCell */,
+				10333DEA2FFDA22F00F297D8 /* LabelCell */,
+				10333DEC2FFDA22F00F297D8 /* Protocol */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		10333DF12FFDA22F00F297D8 /* CustomMenu */ = {
+			isa = PBXGroup;
+			children = (
+				10333DEE2FFDA22F00F297D8 /* CustomMenu.swift */,
+				10333DEF2FFDA22F00F297D8 /* CustomMenu.xib */,
+				10333DF02FFDA22F00F297D8 /* CustomMenuConstants.swift */,
+			);
+			path = CustomMenu;
+			sourceTree = "<group>";
+		};
+		10333DF32FFDA22F00F297D8 /* CustomMenu */ = {
+			isa = PBXGroup;
+			children = (
+				10333DED2FFDA22F00F297D8 /* Cells */,
+				10333DF12FFDA22F00F297D8 /* CustomMenu */,
+				10333DF22FFDA22F00F297D8 /* CustomMenuButton.swift */,
+			);
+			path = CustomMenu;
+			sourceTree = "<group>";
+		};
+		10333DF62FFDA22F00F297D8 /* CustomPhoneView */ = {
+			isa = PBXGroup;
+			children = (
+				10333DF42FFDA22F00F297D8 /* CustomPhoneView.swift */,
+				10333DF52FFDA22F00F297D8 /* CustomPhoneView.xib */,
+			);
+			path = CustomPhoneView;
+			sourceTree = "<group>";
+		};
+		10333DF92FFDA22F00F297D8 /* CustomToastView */ = {
+			isa = PBXGroup;
+			children = (
+				10333DF72FFDA22F00F297D8 /* CustomToastView.swift */,
+				10333DF82FFDA22F00F297D8 /* CustomToastView.xib */,
+			);
+			path = CustomToastView;
+			sourceTree = "<group>";
+		};
+		10333E052FFDA22F00F297D8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				10333DE22FFDA22F00F297D8 /* CustomCountryPicker */,
+				10333DF32FFDA22F00F297D8 /* CustomMenu */,
+				10333DF62FFDA22F00F297D8 /* CustomPhoneView */,
+				10333DF92FFDA22F00F297D8 /* CustomToastView */,
+				10333DFA2FFDA22F00F297D8 /* BaseView.swift */,
+				10333DFB2FFDA22F00F297D8 /* BlurLoader.swift */,
+				10333DFC2FFDA22F00F297D8 /* BorderedButton.swift */,
+				10333DFD2FFDA22F00F297D8 /* CustomImageView.swift */,
+				10333DFE2FFDA22F00F297D8 /* CustomTextField.swift */,
+				10333DFF2FFDA22F00F297D8 /* HeaderLabel.swift */,
+				10333E002FFDA22F00F297D8 /* OTPTextField.swift */,
+				10333E012FFDA22F00F297D8 /* PingOneNavController.swift */,
+				10333E022FFDA22F00F297D8 /* ProcessingColorHolderView.swift */,
+				10333E032FFDA22F00F297D8 /* TintColorHolderView.swift */,
+				10333E042FFDA22F00F297D8 /* VerifyButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		10333E072FFDA22F00F297D8 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10333E062FFDA22F00F297D8 /* BaseViewController+navigation.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		10333E0B2FFDA22F00F297D8 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				10333E082FFDA22F00F297D8 /* String+getHeight.swift */,
+				10333E092FFDA22F00F297D8 /* String+localized.swift */,
+				10333E0A2FFDA22F00F297D8 /* String+UIImage.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		10333E0D2FFDA22F00F297D8 /* TimeInterval */ = {
+			isa = PBXGroup;
+			children = (
+				10333E0C2FFDA22F00F297D8 /* TimeInterval+format.swift */,
+			);
+			path = TimeInterval;
+			sourceTree = "<group>";
+		};
+		10333E0F2FFDA22F00F297D8 /* UIAction */ = {
+			isa = PBXGroup;
+			children = (
+				10333E0E2FFDA22F00F297D8 /* UIAction+handler.swift */,
+			);
+			path = UIAction;
+			sourceTree = "<group>";
+		};
+		10333E112FFDA22F00F297D8 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				10333E102FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		10333E132FFDA22F00F297D8 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				10333E122FFDA22F00F297D8 /* UIColor+loadColor.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		10333E192FFDA22F00F297D8 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				10333E142FFDA22F00F297D8 /* UIImage+addGrandient.swift */,
+				10333E152FFDA22F00F297D8 /* UIImage+addImagePadding.swift */,
+				10333E162FFDA22F00F297D8 /* UIImage+loadImage.swift */,
+				10333E172FFDA22F00F297D8 /* UIImage+resizeImage.swift */,
+				10333E182FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		10333E1B2FFDA22F00F297D8 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				10333E1A2FFDA22F00F297D8 /* UILabel+textWidth.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		10333E1D2FFDA22F00F297D8 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				10333E1C2FFDA22F00F297D8 /* UINavigationController+interface.swift */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		10333E212FFDA22F00F297D8 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				10333E1E2FFDA22F00F297D8 /* UITextField+addLeftView.swift */,
+				10333E1F2FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift */,
+				10333E202FFDA22F00F297D8 /* UITextField+setPadding.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		10333E242FFDA22F00F297D8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				10333E222FFDA22F00F297D8 /* UIView+BlurLoader.swift */,
+				10333E232FFDA22F00F297D8 /* UIView+fixInView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		10333E262FFDA22F00F297D8 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10333E252FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		10333E272FFDA22F00F297D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10333E072FFDA22F00F297D8 /* BaseViewController */,
+				10333E0B2FFDA22F00F297D8 /* String */,
+				10333E0D2FFDA22F00F297D8 /* TimeInterval */,
+				10333E0F2FFDA22F00F297D8 /* UIAction */,
+				10333E112FFDA22F00F297D8 /* UIButton */,
+				10333E132FFDA22F00F297D8 /* UIColor */,
+				10333E192FFDA22F00F297D8 /* UIImage */,
+				10333E1B2FFDA22F00F297D8 /* UILabel */,
+				10333E1D2FFDA22F00F297D8 /* UINavigationController */,
+				10333E212FFDA22F00F297D8 /* UITextField */,
+				10333E242FFDA22F00F297D8 /* UIView */,
+				10333E262FFDA22F00F297D8 /* UIViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10333E2C2FFDA22F00F297D8 /* Geolocation */ = {
+			isa = PBXGroup;
+			children = (
+				10333E282FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift */,
+				10333E292FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib */,
+				10333E2A2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift */,
+				10333E2B2FFDA22F00F297D8 /* GeolocationPermissionViewController.xib */,
+			);
+			path = Geolocation;
+			sourceTree = "<group>";
+		};
+		10333E2F2FFDA22F00F297D8 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				10333E2D2FFDA22F00F297D8 /* countries.json */,
+				10333E2E2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		10333E312FFDA22F00F297D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10333E302FFDA22F00F297D8 /* DocumentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10333E332FFDA22F00F297D8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				10333E322FFDA22F00F297D8 /* PingOneNavController.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		10333E362FFDA22F00F297D8 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				10333E342FFDA22F00F297D8 /* PingOneVerifyHelper.swift */,
+				10333E352FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		10333E382FFDA22F00F297D8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				10333E372FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		10333E392FFDA22F00F297D8 /* PingOneVerifyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				10333E362FFDA22F00F297D8 /* Client */,
+				10333E382FFDA22F00F297D8 /* Extension */,
+			);
+			path = PingOneVerifyHelper;
+			sourceTree = "<group>";
+		};
+		10333E3C2FFDA22F00F297D8 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				10333E3A2FFDA22F00F297D8 /* DocumentCaptureContract.swift */,
+				10333E3B2FFDA22F00F297D8 /* DocumentCapturePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		10333E3F2FFDA22F00F297D8 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				10333E3D2FFDA22F00F297D8 /* PreviewViewController.swift */,
+				10333E3E2FFDA22F00F297D8 /* PreviewViewController.xib */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		10333E452FFDA22F00F297D8 /* QrScanner */ = {
+			isa = PBXGroup;
+			children = (
+				10333E402FFDA22F00F297D8 /* QrScannerContract.swift */,
+				10333E412FFDA22F00F297D8 /* QrScannerListener.swift */,
+				10333E422FFDA22F00F297D8 /* QrScannerPresenter.swift */,
+				10333E432FFDA22F00F297D8 /* QrScannerView.xib */,
+				10333E442FFDA22F00F297D8 /* QRScannerViewController.swift */,
+			);
+			path = QrScanner;
+			sourceTree = "<group>";
+		};
+		10333E482FFDA22F00F297D8 /* Retry */ = {
+			isa = PBXGroup;
+			children = (
+				10333E462FFDA22F00F297D8 /* RetryViewController.swift */,
+				10333E472FFDA22F00F297D8 /* RetryViewController.xib */,
+			);
+			path = Retry;
+			sourceTree = "<group>";
+		};
+		10333E4A2FFDA22F00F297D8 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				10333E492FFDA22F00F297D8 /* SCFace.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		10333E4C2FFDA22F00F297D8 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				10333E4B2FFDA22F00F297D8 /* SCAVCaptureWrapper.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		10333E4D2FFDA22F00F297D8 /* SCAVCapture */ = {
+			isa = PBXGroup;
+			children = (
+				10333E4A2FFDA22F00F297D8 /* Types */,
+				10333E4C2FFDA22F00F297D8 /* Wrappers */,
+			);
+			path = SCAVCapture;
+			sourceTree = "<group>";
+		};
+		10333E502FFDA22F00F297D8 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				10333E4E2FFDA22F00F297D8 /* LivenessCheckError.swift */,
+				10333E4F2FFDA22F00F297D8 /* SelfieQAError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		10333E542FFDA22F00F297D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10333E512FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift */,
+				10333E522FFDA22F00F297D8 /* CGRect+CenteredRect.swift */,
+				10333E532FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10333E5C2FFDA22F00F297D8 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				10333E552FFDA22F00F297D8 /* AtomicWrapper.swift */,
+				10333E562FFDA22F00F297D8 /* Expression.swift */,
+				10333E572FFDA22F00F297D8 /* Face.swift */,
+				10333E582FFDA22F00F297D8 /* FaceLandmark.swift */,
+				10333E592FFDA22F00F297D8 /* LandmarkType.swift */,
+				10333E5A2FFDA22F00F297D8 /* MedianLine.swift */,
+				10333E5B2FFDA22F00F297D8 /* SelfieQAResult.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		10333E632FFDA22F00F297D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10333E5D2FFDA22F00F297D8 /* CameraOverlayView.swift */,
+				10333E5E2FFDA22F00F297D8 /* CenterTextLayer.swift */,
+				10333E5F2FFDA22F00F297D8 /* OvalCameraOverlayView.swift */,
+				10333E602FFDA22F00F297D8 /* SelfieCaptureView.xib */,
+				10333E612FFDA22F00F297D8 /* SelfiePreviewView.xib */,
+				10333E622FFDA22F00F297D8 /* SelfiePreviewViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		10333E642FFDA22F00F297D8 /* SelfieCapture */ = {
+			isa = PBXGroup;
+			children = (
+				10333E502FFDA22F00F297D8 /* Errors */,
+				10333E542FFDA22F00F297D8 /* Extensions */,
+				10333E5C2FFDA22F00F297D8 /* Types */,
+				10333E632FFDA22F00F297D8 /* ViewControllers */,
+			);
+			path = SelfieCapture;
+			sourceTree = "<group>";
+		};
+		10333E672FFDA22F00F297D8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				10333E652FFDA22F00F297D8 /* ImageTransformations.swift */,
+				10333E662FFDA22F00F297D8 /* SampleBufferUtils.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		10333E692FFDA22F00F297D8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				10333E672FFDA22F00F297D8 /* Image */,
+				10333E682FFDA22F00F297D8 /* CountryCodes.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		10333E6C2FFDA22F00F297D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				10333E6A2FFDA22F00F297D8 /* BaseViewController.swift */,
+				10333E6B2FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		10333E6F2FFDA22F00F297D8 /* Email Capture */ = {
+			isa = PBXGroup;
+			children = (
+				10333E6D2FFDA22F00F297D8 /* EmailCaptureViewController.swift */,
+				10333E6E2FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift */,
+			);
+			path = "Email Capture";
+			sourceTree = "<group>";
+		};
+		10333E732FFDA22F00F297D8 /* OTP Capture */ = {
+			isa = PBXGroup;
+			children = (
+				10333E702FFDA22F00F297D8 /* OtpViewController.swift */,
+				10333E712FFDA22F00F297D8 /* OtpViewController.xib */,
+				10333E722FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift */,
+			);
+			path = "OTP Capture";
+			sourceTree = "<group>";
+		};
+		10333E782FFDA22F00F297D8 /* Phone Capture */ = {
+			isa = PBXGroup;
+			children = (
+				10333E742FFDA22F00F297D8 /* PhoneCaptureUtils.swift */,
+				10333E752FFDA22F00F297D8 /* PhoneCaptureViewController.swift */,
+				10333E762FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift */,
+				10333E772FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift */,
+			);
+			path = "Phone Capture";
+			sourceTree = "<group>";
+		};
+		10333E7C2FFDA22F00F297D8 /* Data Capture */ = {
+			isa = PBXGroup;
+			children = (
+				10333E6F2FFDA22F00F297D8 /* Email Capture */,
+				10333E732FFDA22F00F297D8 /* OTP Capture */,
+				10333E782FFDA22F00F297D8 /* Phone Capture */,
+				10333E792FFDA22F00F297D8 /* DataCaptureConstants.swift */,
+				10333E7A2FFDA22F00F297D8 /* DataCaptureViewController.swift */,
+				10333E7B2FFDA22F00F297D8 /* DataCaptureViewController.xib */,
+			);
+			path = "Data Capture";
+			sourceTree = "<group>";
+		};
+		10333E7F2FFDA22F00F297D8 /* DocumentCapture */ = {
+			isa = PBXGroup;
+			children = (
+				10333E7D2FFDA22F00F297D8 /* DocumentCaptureViewController.swift */,
+				10333E7E2FFDA22F00F297D8 /* DocumentCaptureViewController.xib */,
+			);
+			path = DocumentCapture;
+			sourceTree = "<group>";
+		};
+		10333E842FFDA22F00F297D8 /* DocumentSelection */ = {
+			isa = PBXGroup;
+			children = (
+				10333E802FFDA22F00F297D8 /* DocumentSelectionCell.swift */,
+				10333E812FFDA22F00F297D8 /* DocumentSelectionCell.xib */,
+				10333E822FFDA22F00F297D8 /* DocumentSelectionVC.xib */,
+				10333E832FFDA22F00F297D8 /* DocumentSelectionViewController.swift */,
+			);
+			path = DocumentSelection;
+			sourceTree = "<group>";
+		};
+		10333E872FFDA22F00F297D8 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				10333E852FFDA22F00F297D8 /* ProcessingViewController.swift */,
+				10333E862FFDA22F00F297D8 /* ProcessingViewController.xib */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		10333E882FFDA22F00F297D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10333E6C2FFDA22F00F297D8 /* Base */,
+				10333E7C2FFDA22F00F297D8 /* Data Capture */,
+				10333E7F2FFDA22F00F297D8 /* DocumentCapture */,
+				10333E842FFDA22F00F297D8 /* DocumentSelection */,
+				10333E872FFDA22F00F297D8 /* Processing */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		10333E8D2FFDA22F00F297D8 /* VerifyUI */ = {
+			isa = PBXGroup;
+			children = (
+				10333DDC2FFDA22F00F297D8 /* AppTheme */,
+				10333E052FFDA22F00F297D8 /* CustomViews */,
+				10333E272FFDA22F00F297D8 /* Extensions */,
+				10333E2C2FFDA22F00F297D8 /* Geolocation */,
+				10333E2F2FFDA22F00F297D8 /* Localizations */,
+				10333E312FFDA22F00F297D8 /* Model */,
+				10333E332FFDA22F00F297D8 /* Navigation */,
+				10333E392FFDA22F00F297D8 /* PingOneVerifyHelper */,
+				10333E3C2FFDA22F00F297D8 /* Presenters */,
+				10333E3F2FFDA22F00F297D8 /* Preview */,
+				10333E452FFDA22F00F297D8 /* QrScanner */,
+				10333E482FFDA22F00F297D8 /* Retry */,
+				10333E4D2FFDA22F00F297D8 /* SCAVCapture */,
+				10333E642FFDA22F00F297D8 /* SelfieCapture */,
+				10333E692FFDA22F00F297D8 /* Utils */,
+				10333E882FFDA22F00F297D8 /* ViewControllers */,
+				10333E892FFDA22F00F297D8 /* Assets.xcassets */,
+				10333E8A2FFDA22F00F297D8 /* VerifyUI.h */,
+				10333E8B2FFDA22F00F297D8 /* VerifyUI.docc */,
+				10333E8C2FFDA22F00F297D8 /* VerifyUIExports.swift */,
+			);
+			path = VerifyUI;
+			sourceTree = "<group>";
+		};
 		103501E82DDB78E9005F2E74 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -876,14 +1976,16 @@
 		107BB9AE2F4F593B00FE5496 /* Verify */ = {
 			isa = PBXGroup;
 			children = (
-				107BB9E82F4F5F6800FE5496 /* BlinkID.xcframework */,
-				107BB9E92F4F5F6800FE5496 /* GeoLocationProvider.xcframework */,
-				107BB9EA2F4F5F6800FE5496 /* IDLiveFaceCamera.xcframework */,
-				107BB9EB2F4F5F6800FE5496 /* IDLiveFaceDetection.xcframework */,
-				107BB9EC2F4F5F6800FE5496 /* IDLiveFaceIAD.xcframework */,
-				107BB9ED2F4F5F6800FE5496 /* LanguagePackProvider.xcframework */,
-				107BB9EE2F4F5F6800FE5496 /* NeoInterfaces.xcframework */,
-				107BB9EF2F4F5F6800FE5496 /* PingOneVerify.xcframework */,
+				10E2DE8B2FFD62D100FDDBE3 /* BlinkID.xcframework */,
+				10E2DE8C2FFD62D100FDDBE3 /* BlinkIDUX.xcframework */,
+				10E2DE8D2FFD62D100FDDBE3 /* GeoLocationProvider.xcframework */,
+				10E2DE8E2FFD62D100FDDBE3 /* IdCaptureProvider.xcframework */,
+				10E2DE8F2FFD62D100FDDBE3 /* IDLiveFaceCamera.xcframework */,
+				10E2DE902FFD62D100FDDBE3 /* IDLiveFaceDetection.xcframework */,
+				10E2DE912FFD62D100FDDBE3 /* IDLiveFaceIAD.xcframework */,
+				10E2DE932FFD62D100FDDBE3 /* NeoInterfaces.xcframework */,
+				10E2DE942FFD62D100FDDBE3 /* PingOneVerify.xcframework */,
+				10E2DE952FFD62D100FDDBE3 /* SelfieCaptureProvider.xcframework */,
 			);
 			path = Verify;
 			sourceTree = "<group>";
@@ -917,6 +2019,7 @@
 				10987DB12D5685970010FE09 /* Infrustructure */,
 				10A0402D2D5BC88800816220 /* Models */,
 				10A0402B2D5BC76500816220 /* Utilities */,
+				10333E8D2FFDA22F00F297D8 /* VerifyUI */,
 				10A040292D5BC5C700816220 /* Views */,
 				10987DA42D5680E40010FE09 /* AppDelegate.swift */,
 			);
@@ -1000,6 +2103,7 @@
 			children = (
 				10A0402E2D5BC89500816220 /* ConfirmationViewModel.swift */,
 				10222F082D3580EC00295B35 /* WalletViewModel.swift */,
+				10E2DEB72FFD677600FDDBE3 /* QRScannerViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1360,6 +2464,29 @@
 				10109F5D2A5F05DD004A60E1 /* Preview Assets.xcassets in Resources */,
 				104DD8682D78C6EF00C25A26 /* GoogleService-Info.plist in Resources */,
 				10109F5A2A5F05DD004A60E1 /* Assets.xcassets in Resources */,
+				10333EF32FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings in Resources */,
+				10333EF42FFDA22F00F297D8 /* ImageCell.xib in Resources */,
+				10333EF52FFDA22F00F297D8 /* SelfieCaptureView.xib in Resources */,
+				10333EF62FFDA22F00F297D8 /* SelfiePreviewView.xib in Resources */,
+				10333EF72FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib in Resources */,
+				10333EF82FFDA22F00F297D8 /* CustomCountryPickerViewController.xib in Resources */,
+				10333EF92FFDA22F00F297D8 /* CustomToastView.xib in Resources */,
+				10333EFA2FFDA22F00F297D8 /* PingOneNavController.xib in Resources */,
+				10333EFB2FFDA22F00F297D8 /* DocumentSelectionCell.xib in Resources */,
+				10333EFC2FFDA22F00F297D8 /* CustomPhoneView.xib in Resources */,
+				10333EFD2FFDA22F00F297D8 /* Assets.xcassets in Resources */,
+				10333EFE2FFDA22F00F297D8 /* LabelCell.xib in Resources */,
+				10333EFF2FFDA22F00F297D8 /* DataCaptureViewController.xib in Resources */,
+				10333F002FFDA22F00F297D8 /* DocumentSelectionVC.xib in Resources */,
+				10333F012FFDA22F00F297D8 /* OtpViewController.xib in Resources */,
+				10333F022FFDA22F00F297D8 /* RetryViewController.xib in Resources */,
+				10333F032FFDA22F00F297D8 /* QrScannerView.xib in Resources */,
+				10333F042FFDA22F00F297D8 /* DocumentCaptureViewController.xib in Resources */,
+				10333F052FFDA22F00F297D8 /* CustomMenu.xib in Resources */,
+				10333F062FFDA22F00F297D8 /* PreviewViewController.xib in Resources */,
+				10333F072FFDA22F00F297D8 /* GeolocationPermissionViewController.xib in Resources */,
+				10333F082FFDA22F00F297D8 /* ProcessingViewController.xib in Resources */,
+				10333F092FFDA22F00F297D8 /* countries.json in Resources */,
 				10A040262D5BC4E000816220 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1371,6 +2498,29 @@
 				1072D7D02E4B7C2D0086C8BA /* Localizable.xcstrings in Resources */,
 				1072D7B72E4A75E30086C8BA /* Assets.xcassets in Resources */,
 				109465DC2E4BC356008B0151 /* GoogleService-Info.plist in Resources */,
+				10333FEB2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings in Resources */,
+				10333FEC2FFDA22F00F297D8 /* ImageCell.xib in Resources */,
+				10333FED2FFDA22F00F297D8 /* SelfieCaptureView.xib in Resources */,
+				10333FEE2FFDA22F00F297D8 /* SelfiePreviewView.xib in Resources */,
+				10333FEF2FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib in Resources */,
+				10333FF02FFDA22F00F297D8 /* CustomCountryPickerViewController.xib in Resources */,
+				10333FF12FFDA22F00F297D8 /* CustomToastView.xib in Resources */,
+				10333FF22FFDA22F00F297D8 /* PingOneNavController.xib in Resources */,
+				10333FF32FFDA22F00F297D8 /* DocumentSelectionCell.xib in Resources */,
+				10333FF42FFDA22F00F297D8 /* CustomPhoneView.xib in Resources */,
+				10333FF52FFDA22F00F297D8 /* Assets.xcassets in Resources */,
+				10333FF62FFDA22F00F297D8 /* LabelCell.xib in Resources */,
+				10333FF72FFDA22F00F297D8 /* DataCaptureViewController.xib in Resources */,
+				10333FF82FFDA22F00F297D8 /* DocumentSelectionVC.xib in Resources */,
+				10333FF92FFDA22F00F297D8 /* OtpViewController.xib in Resources */,
+				10333FFA2FFDA22F00F297D8 /* RetryViewController.xib in Resources */,
+				10333FFB2FFDA22F00F297D8 /* QrScannerView.xib in Resources */,
+				10333FFC2FFDA22F00F297D8 /* DocumentCaptureViewController.xib in Resources */,
+				10333FFD2FFDA22F00F297D8 /* CustomMenu.xib in Resources */,
+				10333FFE2FFDA22F00F297D8 /* PreviewViewController.xib in Resources */,
+				10333FFF2FFDA22F00F297D8 /* GeolocationPermissionViewController.xib in Resources */,
+				103340002FFDA22F00F297D8 /* ProcessingViewController.xib in Resources */,
+				103340012FFDA22F00F297D8 /* countries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1381,6 +2531,29 @@
 				10EEFF632D0CB41C00B89DF7 /* Preview Assets.xcassets in Resources */,
 				104DD8722D78DA1800C25A26 /* GoogleService-Info.plist in Resources */,
 				1036486A2D5A51BB00418CD4 /* Localizable.xcstrings in Resources */,
+				10333F6F2FFDA22F00F297D8 /* PingOneVerifyLocalizable.strings in Resources */,
+				10333F702FFDA22F00F297D8 /* ImageCell.xib in Resources */,
+				10333F712FFDA22F00F297D8 /* SelfieCaptureView.xib in Resources */,
+				10333F722FFDA22F00F297D8 /* SelfiePreviewView.xib in Resources */,
+				10333F732FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.xib in Resources */,
+				10333F742FFDA22F00F297D8 /* CustomCountryPickerViewController.xib in Resources */,
+				10333F752FFDA22F00F297D8 /* CustomToastView.xib in Resources */,
+				10333F762FFDA22F00F297D8 /* PingOneNavController.xib in Resources */,
+				10333F772FFDA22F00F297D8 /* DocumentSelectionCell.xib in Resources */,
+				10333F782FFDA22F00F297D8 /* CustomPhoneView.xib in Resources */,
+				10333F792FFDA22F00F297D8 /* Assets.xcassets in Resources */,
+				10333F7A2FFDA22F00F297D8 /* LabelCell.xib in Resources */,
+				10333F7B2FFDA22F00F297D8 /* DataCaptureViewController.xib in Resources */,
+				10333F7C2FFDA22F00F297D8 /* DocumentSelectionVC.xib in Resources */,
+				10333F7D2FFDA22F00F297D8 /* OtpViewController.xib in Resources */,
+				10333F7E2FFDA22F00F297D8 /* RetryViewController.xib in Resources */,
+				10333F7F2FFDA22F00F297D8 /* QrScannerView.xib in Resources */,
+				10333F802FFDA22F00F297D8 /* DocumentCaptureViewController.xib in Resources */,
+				10333F812FFDA22F00F297D8 /* CustomMenu.xib in Resources */,
+				10333F822FFDA22F00F297D8 /* PreviewViewController.xib in Resources */,
+				10333F832FFDA22F00F297D8 /* GeolocationPermissionViewController.xib in Resources */,
+				10333F842FFDA22F00F297D8 /* ProcessingViewController.xib in Resources */,
+				10333F852FFDA22F00F297D8 /* countries.json in Resources */,
 				10EEFF642D0CB41C00B89DF7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1416,10 +2589,112 @@
 				100F181B2D5BAE3B00875591 /* PushNotificationService.swift in Sources */,
 				10A040392D5BCDA500816220 /* ConfirmationView.swift in Sources */,
 				107D4DB82E6F3C7C00092F66 /* Color.swift in Sources */,
+				10E2DEBB2FFD93F200FDDBE3 /* QRScanner.swift in Sources */,
 				106EE29F2D5D1734002E6BE5 /* ButtonStyles.swift in Sources */,
 				10987DA62D5680F00010FE09 /* AppDelegate.swift in Sources */,
 				106EE2A12D5D1D8E002E6BE5 /* ToastView.swift in Sources */,
 				106EE2A52D5E6EDE002E6BE5 /* PairDeviceView.swift in Sources */,
+				10333E8E2FFDA22F00F297D8 /* CustomImageView.swift in Sources */,
+				10333E8F2FFDA22F00F297D8 /* QrScannerContract.swift in Sources */,
+				10333E902FFDA22F00F297D8 /* DataCaptureConstants.swift in Sources */,
+				10333E912FFDA22F00F297D8 /* SampleBufferUtils.swift in Sources */,
+				10333E922FFDA22F00F297D8 /* UILabel+textWidth.swift in Sources */,
+				10333E932FFDA22F00F297D8 /* TimeInterval+format.swift in Sources */,
+				10333E942FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift in Sources */,
+				10333E952FFDA22F00F297D8 /* VerifyButton.swift in Sources */,
+				10333E962FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift in Sources */,
+				10333E972FFDA22F00F297D8 /* DocumentCaptureViewController.swift in Sources */,
+				10333E982FFDA22F00F297D8 /* UIImage+loadImage.swift in Sources */,
+				10333E992FFDA22F00F297D8 /* CustomMenu.swift in Sources */,
+				10333E9A2FFDA22F00F297D8 /* RetryViewController.swift in Sources */,
+				10333E9B2FFDA22F00F297D8 /* OTPTextField.swift in Sources */,
+				10333E9C2FFDA22F00F297D8 /* SelfiePreviewViewController.swift in Sources */,
+				10333E9D2FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift in Sources */,
+				10333E9E2FFDA22F00F297D8 /* AtomicWrapper.swift in Sources */,
+				10333E9F2FFDA22F00F297D8 /* UIAction+handler.swift in Sources */,
+				10333EA02FFDA22F00F297D8 /* LabelCellContent.swift in Sources */,
+				10333EA12FFDA22F00F297D8 /* AttributedStringProvider.swift in Sources */,
+				10333EA22FFDA22F00F297D8 /* DocumentCaptureContract.swift in Sources */,
+				10333EA32FFDA22F00F297D8 /* CameraOverlayView.swift in Sources */,
+				10333EA42FFDA22F00F297D8 /* String+localized.swift in Sources */,
+				10333EA52FFDA22F00F297D8 /* CenterTextLayer.swift in Sources */,
+				10333EA62FFDA22F00F297D8 /* ImageCellContent.swift in Sources */,
+				10333EA72FFDA22F00F297D8 /* SelfieQAError.swift in Sources */,
+				10333EA82FFDA22F00F297D8 /* Expression.swift in Sources */,
+				10333EA92FFDA22F00F297D8 /* Face.swift in Sources */,
+				10333EAA2FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift in Sources */,
+				10333EAB2FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift in Sources */,
+				10333EAC2FFDA22F00F297D8 /* SCFace.swift in Sources */,
+				10333EAD2FFDA22F00F297D8 /* CustomMenuItemCell.swift in Sources */,
+				10333EAE2FFDA22F00F297D8 /* ImageCell.swift in Sources */,
+				10333EAF2FFDA22F00F297D8 /* HeaderLabel.swift in Sources */,
+				10333EB02FFDA22F00F297D8 /* UITextField+setPadding.swift in Sources */,
+				10333EB12FFDA22F00F297D8 /* TintColorHolderView.swift in Sources */,
+				10333EB22FFDA22F00F297D8 /* BaseViewController+navigation.swift in Sources */,
+				10333EB32FFDA22F00F297D8 /* CGRect+CenteredRect.swift in Sources */,
+				10333EB42FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift in Sources */,
+				10333EB52FFDA22F00F297D8 /* LabelCell.swift in Sources */,
+				10333EB62FFDA22F00F297D8 /* UIImage+resizeImage.swift in Sources */,
+				10333EB72FFDA22F00F297D8 /* QrScannerPresenter.swift in Sources */,
+				10333EB82FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift in Sources */,
+				10333EB92FFDA22F00F297D8 /* PreviewViewController.swift in Sources */,
+				10333EBA2FFDA22F00F297D8 /* QrScannerListener.swift in Sources */,
+				10333EBB2FFDA22F00F297D8 /* LandmarkType.swift in Sources */,
+				10333EBC2FFDA22F00F297D8 /* UIImage+addGrandient.swift in Sources */,
+				10333EBD2FFDA22F00F297D8 /* CustomTextField.swift in Sources */,
+				10333EBE2FFDA22F00F297D8 /* DocumentSelectionCell.swift in Sources */,
+				10333EBF2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift in Sources */,
+				10333EC02FFDA22F00F297D8 /* SelfieQAResult.swift in Sources */,
+				10333EC12FFDA22F00F297D8 /* UIImage+addImagePadding.swift in Sources */,
+				10333EC22FFDA22F00F297D8 /* DocumentCapturePresenter.swift in Sources */,
+				10333EC32FFDA22F00F297D8 /* DocumentSelectionViewController.swift in Sources */,
+				10333EC42FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift in Sources */,
+				10333EC52FFDA22F00F297D8 /* PhoneCaptureUtils.swift in Sources */,
+				10333EC62FFDA22F00F297D8 /* EmailCaptureViewController.swift in Sources */,
+				10333EC72FFDA22F00F297D8 /* QRScannerViewController.swift in Sources */,
+				10333EC82FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift in Sources */,
+				10333EC92FFDA22F00F297D8 /* BaseViewController.swift in Sources */,
+				10333ECA2FFDA22F00F297D8 /* String+getHeight.swift in Sources */,
+				10333ECB2FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift in Sources */,
+				10333ECC2FFDA22F00F297D8 /* BlurLoader.swift in Sources */,
+				10333ECD2FFDA22F00F297D8 /* PhoneCaptureViewController.swift in Sources */,
+				10333ECE2FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift in Sources */,
+				10333ECF2FFDA22F00F297D8 /* VerifyUI.docc in Sources */,
+				10333ED02FFDA22F00F297D8 /* SCAVCaptureWrapper.swift in Sources */,
+				10333ED12FFDA22F00F297D8 /* DataCaptureViewController.swift in Sources */,
+				10333ED22FFDA22F00F297D8 /* UITextField+addLeftView.swift in Sources */,
+				10333ED32FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift in Sources */,
+				10333ED42FFDA22F00F297D8 /* CustomMenuConstants.swift in Sources */,
+				10333ED52FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift in Sources */,
+				10333ED62FFDA22F00F297D8 /* LivenessCheckError.swift in Sources */,
+				10333ED72FFDA22F00F297D8 /* CustomPhoneView.swift in Sources */,
+				10333ED82FFDA22F00F297D8 /* UINavigationController+interface.swift in Sources */,
+				10333ED92FFDA22F00F297D8 /* BorderedButton.swift in Sources */,
+				10333EDA2FFDA22F00F297D8 /* UIView+fixInView.swift in Sources */,
+				10333EDB2FFDA22F00F297D8 /* MedianLine.swift in Sources */,
+				10333EDC2FFDA22F00F297D8 /* UIView+BlurLoader.swift in Sources */,
+				10333EDD2FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift in Sources */,
+				10333EDE2FFDA22F00F297D8 /* UIColor+loadColor.swift in Sources */,
+				10333EDF2FFDA22F00F297D8 /* DocumentModel.swift in Sources */,
+				10333EE02FFDA22F00F297D8 /* CustomCountryPickerViewController.swift in Sources */,
+				10333EE12FFDA22F00F297D8 /* OvalCameraOverlayView.swift in Sources */,
+				10333EE22FFDA22F00F297D8 /* ProcessingViewController.swift in Sources */,
+				10333EE32FFDA22F00F297D8 /* CustomMenuButton.swift in Sources */,
+				10333EE42FFDA22F00F297D8 /* CustomToastView.swift in Sources */,
+				10333EE52FFDA22F00F297D8 /* FaceLandmark.swift in Sources */,
+				10333EE62FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift in Sources */,
+				10333EE72FFDA22F00F297D8 /* PingOneVerifyHelper.swift in Sources */,
+				10333EE82FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift in Sources */,
+				10333EE92FFDA22F00F297D8 /* ProcessingColorHolderView.swift in Sources */,
+				10333EEA2FFDA22F00F297D8 /* ImageTransformations.swift in Sources */,
+				10333EEB2FFDA22F00F297D8 /* PingOneNavController.swift in Sources */,
+				10333EEC2FFDA22F00F297D8 /* OtpViewController.swift in Sources */,
+				10333EED2FFDA22F00F297D8 /* AppthemeHandler.swift in Sources */,
+				10333EEE2FFDA22F00F297D8 /* String+UIImage.swift in Sources */,
+				10333EEF2FFDA22F00F297D8 /* BaseView.swift in Sources */,
+				10333EF02FFDA22F00F297D8 /* CountryCodes.swift in Sources */,
+				10333EF12FFDA22F00F297D8 /* VerifyUIExports.swift in Sources */,
+				10333EF22FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift in Sources */,
 				10987DB32D5685BA0010FE09 /* DevicePairingClient.swift in Sources */,
 				104DD8662D78C68300C25A26 /* AppDelegate+Firebase.swift in Sources */,
 				10987DB22D5685B50010FE09 /* VerifyClient.swift in Sources */,
@@ -1427,6 +2702,7 @@
 				10A0402F2D5BC89500816220 /* ConfirmationViewModel.swift in Sources */,
 				10A0403E2D5BCE3500816220 /* MockData.swift in Sources */,
 				10A0402A2D5BC5D200816220 /* LogoView.swift in Sources */,
+				10E2DEBA2FFD677600FDDBE3 /* QRScannerViewModel.swift in Sources */,
 				106EE2A22D5E60FF002E6BE5 /* VerifyView.swift in Sources */,
 				10A64D452DD626AF00F16D87 /* String+resource.swift in Sources */,
 				1000FA2A2A61C3AA00ADB773 /* K.swift in Sources */,
@@ -1442,6 +2718,107 @@
 			buildActionMask = 2147483647;
 			files = (
 				10CD05DA2E4D43DF00683E42 /* CredentialListView.swift in Sources */,
+				10333F862FFDA22F00F297D8 /* CustomImageView.swift in Sources */,
+				10333F872FFDA22F00F297D8 /* QrScannerContract.swift in Sources */,
+				10333F882FFDA22F00F297D8 /* DataCaptureConstants.swift in Sources */,
+				10333F892FFDA22F00F297D8 /* SampleBufferUtils.swift in Sources */,
+				10333F8A2FFDA22F00F297D8 /* UILabel+textWidth.swift in Sources */,
+				10333F8B2FFDA22F00F297D8 /* TimeInterval+format.swift in Sources */,
+				10333F8C2FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift in Sources */,
+				10333F8D2FFDA22F00F297D8 /* VerifyButton.swift in Sources */,
+				10333F8E2FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift in Sources */,
+				10333F8F2FFDA22F00F297D8 /* DocumentCaptureViewController.swift in Sources */,
+				10333F902FFDA22F00F297D8 /* UIImage+loadImage.swift in Sources */,
+				10333F912FFDA22F00F297D8 /* CustomMenu.swift in Sources */,
+				10333F922FFDA22F00F297D8 /* RetryViewController.swift in Sources */,
+				10333F932FFDA22F00F297D8 /* OTPTextField.swift in Sources */,
+				10333F942FFDA22F00F297D8 /* SelfiePreviewViewController.swift in Sources */,
+				10333F952FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift in Sources */,
+				10333F962FFDA22F00F297D8 /* AtomicWrapper.swift in Sources */,
+				10333F972FFDA22F00F297D8 /* UIAction+handler.swift in Sources */,
+				10333F982FFDA22F00F297D8 /* LabelCellContent.swift in Sources */,
+				10333F992FFDA22F00F297D8 /* AttributedStringProvider.swift in Sources */,
+				10333F9A2FFDA22F00F297D8 /* DocumentCaptureContract.swift in Sources */,
+				10333F9B2FFDA22F00F297D8 /* CameraOverlayView.swift in Sources */,
+				10333F9C2FFDA22F00F297D8 /* String+localized.swift in Sources */,
+				10333F9D2FFDA22F00F297D8 /* CenterTextLayer.swift in Sources */,
+				10333F9E2FFDA22F00F297D8 /* ImageCellContent.swift in Sources */,
+				10333F9F2FFDA22F00F297D8 /* SelfieQAError.swift in Sources */,
+				10333FA02FFDA22F00F297D8 /* Expression.swift in Sources */,
+				10333FA12FFDA22F00F297D8 /* Face.swift in Sources */,
+				10333FA22FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift in Sources */,
+				10333FA32FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift in Sources */,
+				10333FA42FFDA22F00F297D8 /* SCFace.swift in Sources */,
+				10333FA52FFDA22F00F297D8 /* CustomMenuItemCell.swift in Sources */,
+				10333FA62FFDA22F00F297D8 /* ImageCell.swift in Sources */,
+				10333FA72FFDA22F00F297D8 /* HeaderLabel.swift in Sources */,
+				10333FA82FFDA22F00F297D8 /* UITextField+setPadding.swift in Sources */,
+				10333FA92FFDA22F00F297D8 /* TintColorHolderView.swift in Sources */,
+				10333FAA2FFDA22F00F297D8 /* BaseViewController+navigation.swift in Sources */,
+				10333FAB2FFDA22F00F297D8 /* CGRect+CenteredRect.swift in Sources */,
+				10333FAC2FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift in Sources */,
+				10333FAD2FFDA22F00F297D8 /* LabelCell.swift in Sources */,
+				10333FAE2FFDA22F00F297D8 /* UIImage+resizeImage.swift in Sources */,
+				10333FAF2FFDA22F00F297D8 /* QrScannerPresenter.swift in Sources */,
+				10333FB02FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift in Sources */,
+				10333FB12FFDA22F00F297D8 /* PreviewViewController.swift in Sources */,
+				10333FB22FFDA22F00F297D8 /* QrScannerListener.swift in Sources */,
+				10333FB32FFDA22F00F297D8 /* LandmarkType.swift in Sources */,
+				10333FB42FFDA22F00F297D8 /* UIImage+addGrandient.swift in Sources */,
+				10333FB52FFDA22F00F297D8 /* CustomTextField.swift in Sources */,
+				10333FB62FFDA22F00F297D8 /* DocumentSelectionCell.swift in Sources */,
+				10333FB72FFDA22F00F297D8 /* GeolocationPermissionViewController.swift in Sources */,
+				10333FB82FFDA22F00F297D8 /* SelfieQAResult.swift in Sources */,
+				10333FB92FFDA22F00F297D8 /* UIImage+addImagePadding.swift in Sources */,
+				10333FBA2FFDA22F00F297D8 /* DocumentCapturePresenter.swift in Sources */,
+				10333FBB2FFDA22F00F297D8 /* DocumentSelectionViewController.swift in Sources */,
+				10333FBC2FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift in Sources */,
+				10333FBD2FFDA22F00F297D8 /* PhoneCaptureUtils.swift in Sources */,
+				10333FBE2FFDA22F00F297D8 /* EmailCaptureViewController.swift in Sources */,
+				10333FBF2FFDA22F00F297D8 /* QRScannerViewController.swift in Sources */,
+				10333FC02FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift in Sources */,
+				10333FC12FFDA22F00F297D8 /* BaseViewController.swift in Sources */,
+				10333FC22FFDA22F00F297D8 /* String+getHeight.swift in Sources */,
+				10333FC32FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift in Sources */,
+				10333FC42FFDA22F00F297D8 /* BlurLoader.swift in Sources */,
+				10333FC52FFDA22F00F297D8 /* PhoneCaptureViewController.swift in Sources */,
+				10333FC62FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift in Sources */,
+				10333FC72FFDA22F00F297D8 /* VerifyUI.docc in Sources */,
+				10333FC82FFDA22F00F297D8 /* SCAVCaptureWrapper.swift in Sources */,
+				10333FC92FFDA22F00F297D8 /* DataCaptureViewController.swift in Sources */,
+				10333FCA2FFDA22F00F297D8 /* UITextField+addLeftView.swift in Sources */,
+				10333FCB2FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift in Sources */,
+				10333FCC2FFDA22F00F297D8 /* CustomMenuConstants.swift in Sources */,
+				10333FCD2FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift in Sources */,
+				10333FCE2FFDA22F00F297D8 /* LivenessCheckError.swift in Sources */,
+				10333FCF2FFDA22F00F297D8 /* CustomPhoneView.swift in Sources */,
+				10333FD02FFDA22F00F297D8 /* UINavigationController+interface.swift in Sources */,
+				10333FD12FFDA22F00F297D8 /* BorderedButton.swift in Sources */,
+				10333FD22FFDA22F00F297D8 /* UIView+fixInView.swift in Sources */,
+				10333FD32FFDA22F00F297D8 /* MedianLine.swift in Sources */,
+				10333FD42FFDA22F00F297D8 /* UIView+BlurLoader.swift in Sources */,
+				10333FD52FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift in Sources */,
+				10333FD62FFDA22F00F297D8 /* UIColor+loadColor.swift in Sources */,
+				10333FD72FFDA22F00F297D8 /* DocumentModel.swift in Sources */,
+				10333FD82FFDA22F00F297D8 /* CustomCountryPickerViewController.swift in Sources */,
+				10333FD92FFDA22F00F297D8 /* OvalCameraOverlayView.swift in Sources */,
+				10333FDA2FFDA22F00F297D8 /* ProcessingViewController.swift in Sources */,
+				10333FDB2FFDA22F00F297D8 /* CustomMenuButton.swift in Sources */,
+				10333FDC2FFDA22F00F297D8 /* CustomToastView.swift in Sources */,
+				10333FDD2FFDA22F00F297D8 /* FaceLandmark.swift in Sources */,
+				10333FDE2FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift in Sources */,
+				10333FDF2FFDA22F00F297D8 /* PingOneVerifyHelper.swift in Sources */,
+				10333FE02FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift in Sources */,
+				10333FE12FFDA22F00F297D8 /* ProcessingColorHolderView.swift in Sources */,
+				10333FE22FFDA22F00F297D8 /* ImageTransformations.swift in Sources */,
+				10333FE32FFDA22F00F297D8 /* PingOneNavController.swift in Sources */,
+				10333FE42FFDA22F00F297D8 /* OtpViewController.swift in Sources */,
+				10333FE52FFDA22F00F297D8 /* AppthemeHandler.swift in Sources */,
+				10333FE62FFDA22F00F297D8 /* String+UIImage.swift in Sources */,
+				10333FE72FFDA22F00F297D8 /* BaseView.swift in Sources */,
+				10333FE82FFDA22F00F297D8 /* CountryCodes.swift in Sources */,
+				10333FE92FFDA22F00F297D8 /* VerifyUIExports.swift in Sources */,
+				10333FEA2FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift in Sources */,
 				1072D7B82E4A75E30086C8BA /* BXWalletApp.swift in Sources */,
 				1072D7C92E4A7F9F0086C8BA /* ToastView.swift in Sources */,
 				109465BE2E4BBBE0008B0151 /* WalletViewModel.swift in Sources */,
@@ -1473,6 +2850,7 @@
 				109465B22E4BBA05008B0151 /* PingOneWalletHelper.swift in Sources */,
 				109465D32E4BBEC8008B0151 /* Connectivity.swift in Sources */,
 				1072D7B92E4A75E30086C8BA /* ContentView.swift in Sources */,
+				10E2DEB92FFD677600FDDBE3 /* QRScannerViewModel.swift in Sources */,
 				10CD05E42E4E66DE00683E42 /* WalletAppViewModel.swift in Sources */,
 				1072D7BF2E4A7E4C0086C8BA /* UIUtilities.swift in Sources */,
 				109465B32E4BBA0A008B0151 /* WalletCoordinator.swift in Sources */,
@@ -1521,12 +2899,114 @@
 				1072D7A22E4A4A480086C8BA /* CredentialListView.swift in Sources */,
 				10CD05DD2E4E2ABC00683E42 /* Color.swift in Sources */,
 				100CEC5D2D38209E000B73E5 /* DeviceSelectionCollectorView.swift in Sources */,
+				10333F0A2FFDA22F00F297D8 /* CustomImageView.swift in Sources */,
+				10333F0B2FFDA22F00F297D8 /* QrScannerContract.swift in Sources */,
+				10333F0C2FFDA22F00F297D8 /* DataCaptureConstants.swift in Sources */,
+				10333F0D2FFDA22F00F297D8 /* SampleBufferUtils.swift in Sources */,
+				10333F0E2FFDA22F00F297D8 /* UILabel+textWidth.swift in Sources */,
+				10333F0F2FFDA22F00F297D8 /* TimeInterval+format.swift in Sources */,
+				10333F102FFDA22F00F297D8 /* VerifyLanguagePackProvider.swift in Sources */,
+				10333F112FFDA22F00F297D8 /* VerifyButton.swift in Sources */,
+				10333F122FFDA22F00F297D8 /* CustomCountryCodePickerListener.swift in Sources */,
+				10333F132FFDA22F00F297D8 /* DocumentCaptureViewController.swift in Sources */,
+				10333F142FFDA22F00F297D8 /* UIImage+loadImage.swift in Sources */,
+				10333F152FFDA22F00F297D8 /* CustomMenu.swift in Sources */,
+				10333F162FFDA22F00F297D8 /* RetryViewController.swift in Sources */,
+				10333F172FFDA22F00F297D8 /* OTPTextField.swift in Sources */,
+				10333F182FFDA22F00F297D8 /* SelfiePreviewViewController.swift in Sources */,
+				10333F192FFDA22F00F297D8 /* GeolocationPermissionRetryViewController.swift in Sources */,
+				10333F1A2FFDA22F00F297D8 /* AtomicWrapper.swift in Sources */,
+				10333F1B2FFDA22F00F297D8 /* UIAction+handler.swift in Sources */,
+				10333F1C2FFDA22F00F297D8 /* LabelCellContent.swift in Sources */,
+				10333F1D2FFDA22F00F297D8 /* AttributedStringProvider.swift in Sources */,
+				10333F1E2FFDA22F00F297D8 /* DocumentCaptureContract.swift in Sources */,
+				10333F1F2FFDA22F00F297D8 /* CameraOverlayView.swift in Sources */,
+				10333F202FFDA22F00F297D8 /* String+localized.swift in Sources */,
+				10333F212FFDA22F00F297D8 /* CenterTextLayer.swift in Sources */,
+				10333F222FFDA22F00F297D8 /* ImageCellContent.swift in Sources */,
+				10333F232FFDA22F00F297D8 /* SelfieQAError.swift in Sources */,
+				10333F242FFDA22F00F297D8 /* Expression.swift in Sources */,
+				10333F252FFDA22F00F297D8 /* Face.swift in Sources */,
+				10333F262FFDA22F00F297D8 /* UIViewController+requestCameraPermission.swift in Sources */,
+				10333F272FFDA22F00F297D8 /* PingOneVerifyHelper+VerifyTransactionCoordinatorDelegate.swift in Sources */,
+				10333F282FFDA22F00F297D8 /* SCFace.swift in Sources */,
+				10333F292FFDA22F00F297D8 /* CustomMenuItemCell.swift in Sources */,
+				10333F2A2FFDA22F00F297D8 /* ImageCell.swift in Sources */,
+				10333F2B2FFDA22F00F297D8 /* HeaderLabel.swift in Sources */,
+				10333F2C2FFDA22F00F297D8 /* UITextField+setPadding.swift in Sources */,
+				10333F2D2FFDA22F00F297D8 /* TintColorHolderView.swift in Sources */,
+				10333F2E2FFDA22F00F297D8 /* BaseViewController+navigation.swift in Sources */,
+				10333F2F2FFDA22F00F297D8 /* CGRect+CenteredRect.swift in Sources */,
+				10333F302FFDA22F00F297D8 /* PhoneCaptureViewController+UITextFieldDelegate.swift in Sources */,
+				10333F312FFDA22F00F297D8 /* LabelCell.swift in Sources */,
+				10333F322FFDA22F00F297D8 /* UIImage+resizeImage.swift in Sources */,
+				10333F332FFDA22F00F297D8 /* QrScannerPresenter.swift in Sources */,
+				10333F342FFDA22F00F297D8 /* UIButton+preventRepeatedClicks.swift in Sources */,
+				10333F352FFDA22F00F297D8 /* PreviewViewController.swift in Sources */,
+				10333F362FFDA22F00F297D8 /* QrScannerListener.swift in Sources */,
+				10333F372FFDA22F00F297D8 /* LandmarkType.swift in Sources */,
+				10333F382FFDA22F00F297D8 /* UIImage+addGrandient.swift in Sources */,
+				10333F392FFDA22F00F297D8 /* CustomTextField.swift in Sources */,
+				10333F3A2FFDA22F00F297D8 /* DocumentSelectionCell.swift in Sources */,
+				10333F3B2FFDA22F00F297D8 /* GeolocationPermissionViewController.swift in Sources */,
+				10333F3C2FFDA22F00F297D8 /* SelfieQAResult.swift in Sources */,
+				10333F3D2FFDA22F00F297D8 /* UIImage+addImagePadding.swift in Sources */,
+				10333F3E2FFDA22F00F297D8 /* DocumentCapturePresenter.swift in Sources */,
+				10333F3F2FFDA22F00F297D8 /* DocumentSelectionViewController.swift in Sources */,
+				10333F402FFDA22F00F297D8 /* OtpViewController+UITextFieldDelegate.swift in Sources */,
+				10333F412FFDA22F00F297D8 /* PhoneCaptureUtils.swift in Sources */,
+				10333F422FFDA22F00F297D8 /* EmailCaptureViewController.swift in Sources */,
+				10333F432FFDA22F00F297D8 /* QRScannerViewController.swift in Sources */,
+				10333F442FFDA22F00F297D8 /* VNFaceLandmarks2D+GetAll.swift in Sources */,
+				10333F452FFDA22F00F297D8 /* BaseViewController.swift in Sources */,
+				10333F462FFDA22F00F297D8 /* String+getHeight.swift in Sources */,
+				10333F472FFDA22F00F297D8 /* BaseViewControllerWithTextField.swift in Sources */,
+				10333F482FFDA22F00F297D8 /* BlurLoader.swift in Sources */,
+				10333F492FFDA22F00F297D8 /* PhoneCaptureViewController.swift in Sources */,
+				10333F4A2FFDA22F00F297D8 /* CustomCountryPickerViewController+UITableViewDelegate.swift in Sources */,
+				10333F4B2FFDA22F00F297D8 /* VerifyUI.docc in Sources */,
+				10333F4C2FFDA22F00F297D8 /* SCAVCaptureWrapper.swift in Sources */,
+				10333F4D2FFDA22F00F297D8 /* DataCaptureViewController.swift in Sources */,
+				10333F4E2FFDA22F00F297D8 /* UITextField+addLeftView.swift in Sources */,
+				10333F4F2FFDA22F00F297D8 /* CustomCountryPickerViewController+UISearchResultsUpdating.swift in Sources */,
+				10333F502FFDA22F00F297D8 /* CustomMenuConstants.swift in Sources */,
+				10333F512FFDA22F00F297D8 /* UITextField+changeErrorBorder.swift in Sources */,
+				10333F522FFDA22F00F297D8 /* LivenessCheckError.swift in Sources */,
+				10333F532FFDA22F00F297D8 /* CustomPhoneView.swift in Sources */,
+				10333F542FFDA22F00F297D8 /* UINavigationController+interface.swift in Sources */,
+				10333F552FFDA22F00F297D8 /* BorderedButton.swift in Sources */,
+				10333F562FFDA22F00F297D8 /* UIView+fixInView.swift in Sources */,
+				10333F572FFDA22F00F297D8 /* MedianLine.swift in Sources */,
+				10333F582FFDA22F00F297D8 /* UIView+BlurLoader.swift in Sources */,
+				10333F592FFDA22F00F297D8 /* EmailCaptureViewController+UITextFieldDelegate.swift in Sources */,
+				10333F5A2FFDA22F00F297D8 /* UIColor+loadColor.swift in Sources */,
+				10333F5B2FFDA22F00F297D8 /* DocumentModel.swift in Sources */,
+				10333F5C2FFDA22F00F297D8 /* CustomCountryPickerViewController.swift in Sources */,
+				10333F5D2FFDA22F00F297D8 /* OvalCameraOverlayView.swift in Sources */,
+				10333F5E2FFDA22F00F297D8 /* ProcessingViewController.swift in Sources */,
+				10333F5F2FFDA22F00F297D8 /* CustomMenuButton.swift in Sources */,
+				10333F602FFDA22F00F297D8 /* CustomToastView.swift in Sources */,
+				10333F612FFDA22F00F297D8 /* FaceLandmark.swift in Sources */,
+				10333F622FFDA22F00F297D8 /* PhoneCaptureViewController+CustomCountryCodePickerListener.swift in Sources */,
+				10333F632FFDA22F00F297D8 /* PingOneVerifyHelper.swift in Sources */,
+				10333F642FFDA22F00F297D8 /* UIImage+tintWithGradientColor.swift in Sources */,
+				10333F652FFDA22F00F297D8 /* ProcessingColorHolderView.swift in Sources */,
+				10333F662FFDA22F00F297D8 /* ImageTransformations.swift in Sources */,
+				10333F672FFDA22F00F297D8 /* PingOneNavController.swift in Sources */,
+				10333F682FFDA22F00F297D8 /* OtpViewController.swift in Sources */,
+				10333F692FFDA22F00F297D8 /* AppthemeHandler.swift in Sources */,
+				10333F6A2FFDA22F00F297D8 /* String+UIImage.swift in Sources */,
+				10333F6B2FFDA22F00F297D8 /* BaseView.swift in Sources */,
+				10333F6C2FFDA22F00F297D8 /* CountryCodes.swift in Sources */,
+				10333F6D2FFDA22F00F297D8 /* VerifyUIExports.swift in Sources */,
+				10333F6E2FFDA22F00F297D8 /* CGPoint+DistanceFromPoint.swift in Sources */,
 				10222EFD2D35801000295B35 /* WalletCoordinator.swift in Sources */,
 				10222EFE2D35801000295B35 /* DefaultCredentialPicker.swift in Sources */,
 				10222EFF2D35801000295B35 /* ApplicationUiCallbackHandler.swift in Sources */,
 				10222F002D35801000295B35 /* CredentialPicker.swift in Sources */,
 				10222F012D35801000295B35 /* EventObserverUtils.swift in Sources */,
 				10CD05DB2E4E1A4100683E42 /* CredentialCardView.swift in Sources */,
+				10E2DEB82FFD677600FDDBE3 /* QRScannerViewModel.swift in Sources */,
 				10222F022D35801000295B35 /* EventObserver.swift in Sources */,
 				10222F032D35801000295B35 /* PingOneWalletHelper.swift in Sources */,
 				10EEFF582D0CB41C00B89DF7 /* LogoView.swift in Sources */,
@@ -1740,7 +3220,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BXHealth/BXHealth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_ASSET_PATHS = "\"BXHealth/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1758,7 +3238,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3;
+				MARKETING_VERSION = 3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxhealth.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1774,7 +3254,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BXHealth/BXHealth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_ASSET_PATHS = "\"BXHealth/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1792,7 +3272,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3;
+				MARKETING_VERSION = 3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxhealth.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1809,7 +3289,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = BXWallet/BXWallet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1830,7 +3310,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxwallet.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -1848,7 +3328,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = BXWallet/BXWallet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1869,7 +3349,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxwallet.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1885,7 +3365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BXFinance/BXFinance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 49;
 				DEVELOPMENT_ASSET_PATHS = "BXFinance/Preview\\ Content/MockData.swift BXFinance/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1906,7 +3386,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 4.6;
+				MARKETING_VERSION = 4.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1927,7 +3407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BXFinance/BXFinance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 49;
 				DEVELOPMENT_ASSET_PATHS = "BXFinance/Preview\\ Content/MockData.swift BXFinance/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1948,7 +3428,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 4.6;
+				MARKETING_VERSION = 4.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

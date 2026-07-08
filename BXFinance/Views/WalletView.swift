@@ -46,6 +46,7 @@ struct WalletView: View {
         }
         .popover(isPresented: $walletModel.presentQrScanner) {
             QRScannerView()
+                .environmentObject(walletModel.qrScannerModel)
         }
     }
 }

@@ -12,8 +12,8 @@ import DIDSDK
 
 public class PingOneWalletHelper {
     
-    static func initializeWallet() -> CompletionHandler<PingOneWalletHelper> {
-        let completionHandler = CompletionHandler<PingOneWalletHelper>()
+    static func initializeWallet() -> DIDSDK.CompletionHandler<PingOneWalletHelper> {
+        let completionHandler = DIDSDK.CompletionHandler<PingOneWalletHelper>()
         
         let clientBuilder = PingOneWalletClient.Builder(forRegion: PingOneRegion.NA) // Defaulting to initializing for NA
         clientBuilder.build()
@@ -104,10 +104,10 @@ public class PingOneWalletHelper {
     /// - Parameter userInfo: userInfo dictionary in the notification payload
     func processPingOneNotification(_ userInfo: [AnyHashable: Any]?) {
         if (self.pingoneWalletClient.processNotification(userInfo)) {
-            logattention("Processing notification...")
+            PingOneWallet.logattention("Processing notification...")
         } else {
             // Mark: Handle App notification here
-            logattention("Handle App notification here...")
+            PingOneWallet.logattention("Handle App notification here...")
         }
     }
     
@@ -153,7 +153,7 @@ extension PingOneWalletHelper: WalletCallbackHandler {
     ///   - errors: List of any errors while processing/verifying the credential
     /// - Returns: True if the user has accepted the credential, False if the user has rejected the credential
     public func handleCredentialIssuance(issuer: String, message: String?, challenge: Challenge?, claim: Claim, errors: [PingOneWallet.WalletException]) -> Bool {
-        logattention("Credential received: Issuer: \(issuer), message: \(message ?? "none")")
+        PingOneWallet.logattention("Credential received: Issuer: \(issuer), message: \(message ?? "none")")
         self.notifyUser(message: "Received a new credential", style: .success)
         EventObserverUtils.broadcastCredentialsUpdatedNotification(delayBy: 1)
         return true
@@ -168,7 +168,7 @@ extension PingOneWalletHelper: WalletCallbackHandler {
     ///   - errors: List of any errors that occurred while revoking the credential
     /// - Returns: True if the user has accepted the credential revocation, False if the user has rejected the credential revocation
     public func handleCredentialRevocation(issuer: String, message: String?, challenge: Challenge?, claimReference: ClaimReference, errors: [PingOneWallet.WalletException]) -> Bool {
-        logattention("Credential revoked: Issuer: \(issuer), message: \(message ?? "none")")
+        PingOneWallet.logattention("Credential revoked: Issuer: \(issuer), message: \(message ?? "none")")
         self.notifyUser(message: "Credential Revoked")
         self.pingoneWalletClient.getDataRepository().deleteCredential(forId: claimReference.getId())
         EventObserverUtils.broadcastCredentialsUpdatedNotification(delayBy: 1)
@@ -237,7 +237,7 @@ extension PingOneWalletHelper: WalletCallbackHandler {
         case let event as WalletError:
             self.handleErrorEvent(event)
         default:
-            logattention("Received unknown event. \(event.getType())")
+            PingOneWallet.logattention("Received unknown event. \(event.getType())")
         }
     }
     
@@ -251,7 +251,7 @@ extension PingOneWalletHelper {
         case .PAIRING_REQUEST:
             self.handlePairingRequest(event.getPairingRequest())
         case .PAIRING_RESPONSE:
-            logattention("Wallet pairing success: \(String(describing: event.isSuccess())) - error: \(event.getError()?.localizedDescription ?? "None")")
+            PingOneWallet.logattention("Wallet pairing success: \(String(describing: event.isSuccess())) - error: \(event.getError()?.localizedDescription ?? "None")")
             if let isSuccess = event.isSuccess() {
                 GoogleAnalytics.userCompletedAction(actionName: "wallet_paired", actionSuccesful: isSuccess)
                 self.notifyUser(message: isSuccess ? "Wallet paired successfully" : "Wallet pairing failed", style: isSuccess ? .success : .error)
@@ -265,7 +265,7 @@ extension PingOneWalletHelper {
         self.askUserPermission(title: "Pair Wallet", message: "Please confirm to pair your wallet to receive a credential.") { isPositiveAction in
             guard (isPositiveAction) else {
                 GoogleAnalytics.userCompletedAction(actionName: "cancelled_pairing")
-                logattention("Pairing canceled by user")
+                PingOneWallet.logattention("Pairing canceled by user")
                 EventObserverUtils.broadcastUserCancelledPairing()
                 return
             }
@@ -274,7 +274,7 @@ extension PingOneWalletHelper {
                     self.notifyUser(message: "Pairing wallet...")
                 })
                 .onError { err in
-                    logerror("Wallet pairing failed: \(err.localizedDescription)")
+                    PingOneWallet.logerror("Wallet pairing failed: \(err.localizedDescription)")
                     self.notifyUser(message: "Wallet pairing failed", style: .error)
                 }
         }
@@ -282,7 +282,7 @@ extension PingOneWalletHelper {
     
     private func handlePairingRequest(_ presentationRequest: PresentationRequest) {
         guard let pairingRequest = presentationRequest.getPairingRequest() else {
-            logerror("Wallet pairing failed: Invalid request for pairing")
+            PingOneWallet.logerror("Wallet pairing failed: Invalid request for pairing")
             self.notifyUser(message: "Wallet pairing failed", style: .error)
             return
         }
@@ -301,7 +301,7 @@ extension PingOneWalletHelper {
                     self.notifyUser(message: "Information sent successfully", style: .success)
                     GoogleAnalytics.userCompletedAction(actionName: "verified_credential")
                 case .failure:
-                    logerror("Error sharing information: \(result.getDetails()?.debugDescription ?? "None")")
+                    PingOneWallet.logerror("Error sharing information: \(result.getDetails()?.debugDescription ?? "None")")
                     self.notifyUser(message: "Failed to present credential", style: .error)
                     GoogleAnalytics.userCompletedAction(actionName: "verified_credential", actionSuccesful: false)
                 case .requiresAction(let action):
@@ -311,7 +311,7 @@ extension PingOneWalletHelper {
                 }
             }
             .onError { err in
-                logerror("Error sharing information: \(err.localizedDescription)")
+                PingOneWallet.logerror("Error sharing information: \(err.localizedDescription)")
                 self.notifyUser(message: "Failed to present credential")
             }
     }
@@ -320,7 +320,7 @@ extension PingOneWalletHelper {
         switch action {
         case .openUri(let redirectUri):
             self.applicationUiCallbackHandler?.openUrl(url: redirectUri, onComplete: { result, message in
-                logattention("Opening URL: \(redirectUri) - result: \(result) - message: \(message)")
+                PingOneWallet.logattention("Opening URL: \(redirectUri) - result: \(result) - message: \(message)")
                 self.notifyUser(message: message)
             })
         @unknown default:
@@ -331,10 +331,10 @@ extension PingOneWalletHelper {
     private func handleErrorEvent(_ errorEvent: WalletError) {
         switch errorEvent.getError() {
         case .cannotProcessUrl(let url, let debugDescription):
-            logerror("Failed to process url: \(url) - \(debugDescription ?? "None")")
+            PingOneWallet.logerror("Failed to process url: \(url) - \(debugDescription ?? "None")")
             self.notifyUser(message: "Failed to process request", style: .error)
         default:
-            logerror("Error in wallet callback handler: \(errorEvent.getError().localizedDescription)")
+            PingOneWallet.logerror("Error in wallet callback handler: \(errorEvent.getError().localizedDescription)")
         }
     }
 
@@ -363,7 +363,7 @@ extension PingOneWalletHelper {
 extension PingOneWalletHelper {
     
     private func notifyUser(message: String, style: ToastStyle = .info) {
-        logattention(message)
+        PingOneWallet.logattention(message)
         ToastPresenter.show(style: style, toast: message)
     }
     
@@ -372,7 +372,7 @@ extension PingOneWalletHelper {
     }
     
     private func showError(title: String, message: String) {
-        logerror("\(title): \(message)")
+        PingOneWallet.logerror("\(title): \(message)")
         self.applicationUiCallbackHandler?.showErrorAlert(title: title, message: message, actionTitle: String(localized: "okay"), actionHandler: nil)
     }
     
