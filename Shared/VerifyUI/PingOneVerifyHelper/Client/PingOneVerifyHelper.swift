@@ -28,6 +28,12 @@ import CoreLocation
 /// ```
 public class PingOneVerifyHelper: NSObject {
 
+    // MARK: - Session guard
+
+    /// Ensures only one verification session runs at a time.
+    /// Set to `true` inside `initialize` and cleared in `dismissNavigationController`.
+    private static var isVerifying = false
+
     // MARK: - State
 
     internal let pingOneNavController: UINavigationController
@@ -54,6 +60,13 @@ public class PingOneVerifyHelper: NSObject {
     public static func initialize(with verificationUrl: String,
                                   rootViewController: UIViewController,
                                   completionHandler: @escaping (PingOneVerifyHelper?, ClientBuilderError?) -> Void) {
+        guard !isVerifying else {
+            logerror("PingOneVerifyHelper: verification already in progress, ignoring duplicate request.")
+            completionHandler(nil, nil)
+            return
+        }
+        isVerifying = true
+
         let helper = PingOneVerifyHelper(rootViewController: rootViewController)
 
         // To wait for both language pack and AppTheme response.
@@ -65,10 +78,12 @@ public class PingOneVerifyHelper: NSObject {
             .build { client, clientBuilderError in
                 if let clientBuilderError = clientBuilderError {
                     logerror(clientBuilderError.localizedDescription ?? "")
+                    PingOneVerifyHelper.isVerifying = false
                     completionHandler(nil, clientBuilderError)
                     return
                 }
                 guard let client = client else {
+                    PingOneVerifyHelper.isVerifying = false
                     completionHandler(nil, ClientBuilderError(builderError: .unknownError))
                     return
                 }
@@ -147,6 +162,7 @@ public class PingOneVerifyHelper: NSObject {
         removeAbandonmentObserver()
         client.endVerification()
         DocumentSubmissionTimer.shared.reset()
+        PingOneVerifyHelper.isVerifying = false
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             if let nav = self.pingOneNavController as? PingOneNavController {

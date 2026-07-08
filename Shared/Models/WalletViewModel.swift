@@ -74,6 +74,7 @@ class WalletViewModel: ObservableObject {
                         return
                     }
                     
+                    // helper is nil when a session is already in progress; nothing to do.
                     helper?.start()
                 }
             } else {
